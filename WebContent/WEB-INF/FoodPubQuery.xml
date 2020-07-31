@@ -1,0 +1,821 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<Querys>
+
+
+
+
+	<!-- Queries for food -->
+
+
+	<!-- Insert a new food query -->
+	<query id="insert_food">
+        <![CDATA[
+          	insert into fooditem (name, description, portion, price, catergoryID, image, tax, active, itemID) 
+          	values (?, ?, ?, ?, ?, ?, ?, ?, ?)
+        ]]>
+	</query>
+
+	<!-- Select a particular food by id Query -->
+	<query id="food_by_id">
+         <![CDATA[        
+            select * from fooditem where fooditem.itemID = ?
+        ]]>
+	</query>
+
+	<!-- Get no of Food Query -->
+	<query id="no_foods">
+         <![CDATA[        
+            select Count(*) from fooditem where fooditem.price > ?
+        ]]>
+	</query>
+
+	<!-- Get no of Food Query -->
+	<query id="no_foods_category">
+         <![CDATA[        
+            select Count(*) from fooditem where fooditem.catergoryID like ? and fooditem.price > ?
+        ]]>
+	</query>
+
+	<!-- Select all foods -->
+	<query id="all_food">
+         <![CDATA[        
+            select * from fooditem
+        ]]>
+	</query>
+
+
+	<!-- Select a particular food by id Query -->
+	<query id="food_by_cid">
+         <![CDATA[        
+            select * from fooditem where fooditem.catergoryID = ?
+        ]]>
+	</query>
+
+
+	<!-- Select a particular food by search Query -->
+	<query id="food_by_search">
+         <![CDATA[        
+            select * from fooditem where (fooditem.name LIKE '%' ?  '%' OR fooditem.description LIKE '%' ? '%' )
+        ]]>
+	</query>
+
+
+	<!-- Select a particular food by id Query -->
+	<query id="limit_food">
+         <![CDATA[        
+            select * from fooditem limit ? , ?
+        ]]>
+	</query>
+
+	<!-- Select a particular food by id Query -->
+	<query id="limit_food_by_Category">
+         <![CDATA[        
+            select * from fooditem where fooditem.catergoryID like ? and fooditem.price > ? limit ? , ?
+        ]]>
+	</query>
+
+	<!-- Select a particular food by order price asc id Query -->
+	<query id="order_food_by_price_asc">
+         <![CDATA[        
+              select * from fooditem where fooditem.catergoryID like ? and fooditem.price > ? order by price asc limit ?, ?
+        ]]>
+	</query>
+
+	<!-- Select a particular food by order price desc id Query -->
+	<query id="order_food_by_price_desc">
+         <![CDATA[        
+              select * from fooditem where fooditem.catergoryID like ? and fooditem.price > ? order by price desc limit ?, ?
+        ]]>
+	</query>
+
+	<!-- Select a particular food by order portion asc id Query -->
+	<query id="order_food_by_portion_asc">
+         <![CDATA[        
+              select * from fooditem where fooditem.catergoryID like ? and fooditem.price > ? order by portion asc limit ?, ?
+        ]]>
+	</query>
+
+	<!-- Select a particular food by order portion desc id Query -->
+	<query id="order_food_by_portion_desc">
+         <![CDATA[        
+              select * from fooditem where fooditem.catergoryID like ? and fooditem.price > ? order by portion desc limit ?, ?
+        ]]>
+	</query>
+
+
+	<!-- Update a particular admin by id Query -->
+	<query id="update_foodItem">
+         <![CDATA[        
+            update fooditem as f 
+            set f.name = ? , f.description = ? , f.portion = ? , f.price = ? , f.catergoryID = ? , f.tax = ? , f.active = ?
+            where f.itemID = ?
+        ]]>
+	</query>
+
+	<query id="update_foodItem_with_image">
+         <![CDATA[        
+            update fooditem as f 
+            set f.name = ? , f.description = ? , f.portion = ? , f.price = ? , f.catergoryID = ? , f.image = ? , f.tax = ? , f.active = ?
+            where f.itemID = ?
+        ]]>
+	</query>
+
+	<!-- Delete a particular admin by id Query -->
+	<query id="remove_foodItem">
+         <![CDATA[        
+             delete from fooditem where fooditem.itemID in (  ?  )
+        ]]>
+	</query>
+
+
+
+
+
+	<!-- Queries for category -->
+
+	<!-- Insert a new category query -->
+
+	<query id="insert_category">
+        <![CDATA[
+          	insert into category (categoryID, name, description) 
+          	values (?, ?, ?)
+        ]]>
+	</query>
+
+	<!-- Select all Category -->
+	<query id="all_categorys">
+         <![CDATA[        
+            select * from category
+        ]]>
+	</query>
+
+	<!-- Select a particular bill by id Query -->
+	<query id="category_by_id">
+         <![CDATA[        
+            select * from category where category.categoryID = ?
+        ]]>
+	</query>
+
+
+	<query id="update_category">
+         <![CDATA[        
+            update category as f 
+            set f.name = ?, f.description = ?
+            where f.categoryID = ?
+        ]]>
+	</query>
+
+
+	<query id="delete_category">
+         <![CDATA[        
+            delete from category where category.categoryID = ?
+        ]]>
+	</query>
+
+
+
+
+
+
+
+	<!-- Select a particular admin by id Query -->
+	<query id="admin_by_id">
+         <![CDATA[        
+            select * from admin where admin.adminID = ?
+        ]]>
+	</query>
+
+	<!-- Select all admins -->
+	<query id="all_admins">
+         <![CDATA[        
+            select * from admin
+        ]]>
+	</query>
+
+	<!-- Update a particular admin by id Query -->
+	<query id="update_admin">
+         <![CDATA[        
+            update admin as f 
+            set f.amount = ?, f.price = ?  f.name = ? , f.email, f.phone, f.password, f.status
+            where f.adminID = ?
+        ]]>
+	</query>
+
+
+	<!-- Select a particular fuel by id Query -->
+	<query id="admin_by_email">
+         <![CDATA[        
+            select * from admin where admin.email = ?
+        ]]>
+	</query>
+
+	<!-- Delete a particular admin by id Query -->
+	<query id="remove_admin">
+         <![CDATA[        
+            delete from admin where admin.adminID = ?
+        ]]>
+	</query>
+
+	<!-- check a particular admin by email and password Query -->
+	<query id="check_admin">
+         <![CDATA[        
+           select * from admin where admin.email = ? and admin.password = ?
+        ]]>
+	</query>
+
+
+
+
+
+
+
+	<!-- Select a particular user by id Query -->
+
+	<query id="user_by_id">
+         <![CDATA[        
+            select * from user where user.userID = ?
+        ]]>
+	</query>
+
+
+	<query id="insert_user">
+        <![CDATA[
+          	insert into user (name, email, phone, password, status, dateOfBirth, address, userID) 
+          	values (?, ?, ?, ?, ?, ?, ?, ?)
+        ]]>
+	</query>
+
+	<query id="exsist_user_email">
+         <![CDATA[        
+            select * from user where user.email = ?
+        ]]>
+	</query>
+
+
+	<!-- check a particular admin by email and password Query -->
+	<query id="validate_user_login">
+         <![CDATA[        
+           select * from user where user.email = ? and user.password = ?
+        ]]>
+	</query>
+
+
+
+
+
+
+
+	<!-- Update a password by user_id Query -->
+	<query id="user_Password_update">
+         <![CDATA[        
+            update user as f 
+            set f.password = ?
+            where f.userID = ?
+        ]]>
+	</query>
+
+	<!-- Update a particular admin by id Query -->
+	<query id="update_user_Profile">
+         <![CDATA[        
+            update user as f 
+            set f.name = ?, f.address = ?, f.email = ?, f.dateOfBirth = ?, f.phone = ? , f.status = ?
+            where f.userID = ?
+        ]]>
+	</query>
+
+	<!-- Delete a particular admin by id Query -->
+	<query id="delete_user">
+         <![CDATA[        
+            delete from user where user.userID = ?
+        ]]>
+	</query>
+
+
+
+
+
+
+
+	<query id="order_Details_by_user">
+         <![CDATA[        
+            select * from order_ where order_.userID = ?
+        ]]>
+	</query>
+
+	<query id="one_user_order_Details">
+         <![CDATA[        
+            select * from order_ where order_.userID = ? and order_.orderID = ?
+        ]]>
+	</query>
+
+	<query id="all_order_Details">
+         <![CDATA[        
+            select * from order_
+        ]]>
+	</query>
+
+	<query id="insert_order_details">
+        <![CDATA[
+          	insert into order_ (orderID, shippingAddress, userID, pDate, estimatedDate, status, tax, shippingFee, subTotal, total, payment, type, transactionID, dDate) 
+          	values (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)
+        ]]>
+	</query>
+
+	<query id="update_order_details">
+        <![CDATA[
+          	update order_ as f 
+            set f.dDate = ? , f.status = ? , f.payment = ?
+            where f.orderID = ?
+        ]]>
+	</query>
+
+	<!-- Delete a particular admin by id Query -->
+	<query id="remove_order_details">
+         <![CDATA[        
+            delete from order_ where order_.orderID = ?
+        ]]>
+	</query>
+
+
+
+
+
+
+	<!-- FOR CART -->
+
+
+	<query id="insert_cart">
+        <![CDATA[
+          	insert into cart (cartID, userID, itemCount, total, productPriceTotal, tax, shippingFee) 
+          	values (?, ?, ?, ?, ?, ?, ?)
+        ]]>
+	</query>
+
+	<query id="update_cart">
+        <![CDATA[
+          	update cart as f 
+            set f.itemCount = ? , f.total = ? , f.productPriceTotal = ? , f.tax = ? , f.shippingFee = ?
+            where f.cartID = ?
+        ]]>
+	</query>
+
+	<query id="Cart_Details_by_CartID">
+         <![CDATA[        
+           select cartID, userID,  itemCount, total, productPriceTotal, tax, shippingFee
+		   from cart
+		   where cartID = ?
+        ]]>
+	</query>
+
+	<query id="Cart_Details_by_UserID">
+         <![CDATA[        
+           select cartID, userID,  itemCount, total, productPriceTotal, tax, shippingFee
+		   from cart
+		   where userID = ?
+        ]]>
+	</query>
+
+
+
+
+
+	<query id="retrieve_ordered_items">
+         <![CDATA[        
+            select * from order_items where order_items.orderID = ?
+        ]]>
+	</query>
+
+	<query id="insert_orderedItems">
+        <![CDATA[
+          	insert into order_items (orderID, productID, quantity) 
+          	values (?, ?, ?)
+        ]]>
+	</query>
+
+
+
+
+	<!-- FOR CART ITEMS -->
+
+	<query id="insert_cart_items">
+        <![CDATA[
+          	insert into cart_items (cartID, productID, quantity) 
+          	values (?, ?, ?)
+        ]]>
+	</query>
+
+	<query id="update_cart_items">
+        <![CDATA[
+          	update cart_items as f 
+            set f.quantity = ?
+            where f.cartID = ? and f.productID = ?
+        ]]>
+	</query>
+
+	<query id="delete_cart_item">
+         <![CDATA[        
+            delete from cart_items where cartID = ? and productID = ?
+        ]]>
+	</query>
+
+	<query id="Cart_items_Details_by_CartID">
+         <![CDATA[        
+           select cartID, productID, quantity
+		   from cart_items
+		   where cartID = ?
+        ]]>
+	</query>
+
+	<query id="Cart_items_product_validate">
+         <![CDATA[        
+           select cartID, productID, quantity
+		   from cart_items
+		   where cartID = ? and productID = ?
+        ]]>
+	</query>
+
+
+
+
+
+	<query id="product_delivery_fee">
+         <![CDATA[        
+      select fee from deliveryfee where total <= ? order by fee asc limit 1 
+        ]]>
+	</query>
+
+	<query id="retrieve_delivery_fee">
+        <![CDATA[        
+      select * from deliveryfee
+        ]]>
+	</query>
+
+	<query id="retrieve_delivery_fee_by_id">
+        <![CDATA[        
+      select * from deliveryfee where deliveryfee.id = ?
+        ]]>
+	</query>
+
+	<query id="insert_delivery_fee">
+        <![CDATA[
+          	insert into deliveryfee (id, total, fee) 
+          	values (?, ?, ?)
+        ]]>
+	</query>
+
+	<query id="update_delivery_fee">
+        <![CDATA[
+          	update deliveryfee as f 
+            set f.total = ? , f.fee = ? 
+            where f.id = ?
+        ]]>
+	</query>
+
+	<!-- Delete a particular admin by id Query -->
+	<query id="remove_delivery_fee">
+         <![CDATA[        
+            delete from deliveryfee where deliveryfee.id = ?
+        ]]>
+	</query>
+
+
+
+
+
+
+
+	<query id="role_Details_by_roleID">
+         <![CDATA[        
+            select * from role where role.roleID = ?
+        ]]>
+	</query>
+
+
+	<query id="all_role_Details">
+         <![CDATA[        
+            select * from role
+        ]]>
+	</query>
+
+	<query id="insert_role">
+        <![CDATA[
+          	insert into role(roleID, name, description) 
+          	values (?, ?, ?)
+        ]]>
+	</query>
+
+	<query id="update_role">
+        <![CDATA[
+          	update role as f 
+            set f.name = ? , f.description = ?
+            where f.roleID = ?
+        ]]>
+	</query>
+
+	<!-- Delete a particular admin by id Query -->
+	<query id="remove_role">
+         <![CDATA[        
+            delete from role where role.roleID = ?
+        ]]>
+	</query>
+
+
+
+
+	<query id="role_user_Details_by_userID">
+         <![CDATA[        
+            select * from role_user where role_user.userID = ?
+        ]]>
+	</query>
+
+
+	<query id="role_user_Details_by_roleID">
+         <![CDATA[        
+            select * from role_user where role_user.roleID = ?
+        ]]>
+	</query>
+
+
+	<query id="all_role_user_Details">
+         <![CDATA[        
+            select * from role_user
+        ]]>
+	</query>
+
+	<query id="insert_role_user">
+        <![CDATA[
+          	insert into role_user(roleID, userID) 
+          	values (?, ?)
+        ]]>
+	</query>
+
+
+	<!-- Delete a particular admin by id Query -->
+	<query id="remove_role_user">
+         <![CDATA[        
+            delete from role_user where role_user.roleID = ? and role_user.userID = ?
+        ]]>
+	</query>
+
+
+
+	<query id="contactUs_Details_by_ID">
+         <![CDATA[        
+            select * from contactus where contactUs.contactUsID = ?
+        ]]>
+	</query>
+
+
+	<query id="all_contactUs_Details">
+         <![CDATA[        
+            select * from contactUs
+        ]]>
+	</query>
+
+	<query id="insert_contactUs">
+        <![CDATA[
+          	insert into contactus(contactUsID, name, email, phone, subject, message, time) 
+          	values (?, ?, ?, ?, ?, ?, ?)
+        ]]>
+	</query>
+
+	<!-- Delete a particular admin by id Query -->
+	<query id="remove_contactUs">
+         <![CDATA[        
+            delete from contactus where contactUs.contactUsID = ?
+        ]]>
+	</query>
+
+
+
+	<query id="response_Details_by_ID">
+         <![CDATA[        
+            select * from response_db where response_db.responseID = ?
+        ]]>
+	</query>
+
+	<query id="response_Details_by_contactusID">
+         <![CDATA[        
+            select * from response_db where response_db.contactUsID = ?
+        ]]>
+	</query>
+
+
+	<query id="all_responses_Details">
+         <![CDATA[        
+            select * from response_db
+        ]]>
+	</query>
+
+	<query id="insert_response">
+        <![CDATA[
+          	insert into response_db(responseID, contactUsID, userID, message, time) 
+          	values (?, ?, ?, ?, ?)
+        ]]>
+	</query>
+
+	<!-- Delete a particular admin by id Query -->
+	<query id="remove_response">
+         <![CDATA[        
+            delete from response_db where response_db.responseID = ?
+        ]]>
+	</query>
+
+
+
+
+
+
+
+
+
+
+
+
+
+	<query id="inquiry_Details_by_inquiryID">
+         <![CDATA[        
+            select * from inquiry where inquiry.inquiryID = ?
+        ]]>
+	</query>
+
+	<query id="inquiry_details_by_userID">
+         <![CDATA[        
+            select * from inquiry where inquiry.userID = ?
+        ]]>
+	</query>
+
+
+	<query id="all_inquiry_Details">
+         <![CDATA[        
+            select * from inquiry
+        ]]>
+	</query>
+
+	<query id="insert_inquiry">
+        <![CDATA[
+          	insert into inquiry(inquiryID, userID, subject,message, time, image1, image2, image3) 
+          	values (?, ?, ?, ?, ?, ?, ?, ?)
+        ]]>
+	</query>
+
+	<!-- Delete a particular admin by id Query -->
+	<query id="remove_inquiry">
+         <![CDATA[        
+            delete from inquiry where inquiry.inquiryID = ?
+        ]]>
+	</query>
+
+
+
+
+
+
+
+
+	<query id="respondINQ_Details_by_inquiryID">
+         <![CDATA[        
+            select * from respond_inq where respond_inq.inquiryID = ? and respond_inq.time > ?
+        ]]>
+	</query>
+
+	<query id="respondINQ_details_by_respondID">
+         <![CDATA[        
+            select * from respond_inq where respond_inq.responseID = ?
+        ]]>
+	</query>
+
+
+	<query id="all_respondINQ_Details">
+         <![CDATA[        
+            select * from respond_inq
+        ]]>
+	</query>
+
+	<query id="insert_respondINQ">
+        <![CDATA[
+          	insert into respond_inq(responseID, inquiryID, userID, message, time, image1, image2, image3) 
+          	values (?, ?, ?, ?, ?, ?, ?, ?)
+        ]]>
+	</query>
+
+	<!-- Delete a particular admin by id Query -->
+	<query id="remove_respondINQ">
+         <![CDATA[        
+            delete from respond_inq where respond_inq.responseID = ?
+        ]]>
+	</query>
+
+
+
+
+
+
+	<query id="verificationCode_by_userID">
+         <![CDATA[        
+            select * from verification_user where verification_user.userID = ?
+        ]]>
+	</query>
+
+	<query id="insert_verificationCode">
+        <![CDATA[
+          	insert into verification_user(id, userID, token, exTime) 
+          	values (?, ?, ?, ?)
+        ]]>
+	</query>
+
+	<query id="update_verificationCode">
+        <![CDATA[
+          	update verification_user as f 
+            set f.token = ? , f.exTime = ?
+            where f.id = ?
+        ]]>
+	</query>
+
+
+
+
+	<query id="notification_user_by_userID">
+         <![CDATA[        
+            select * from notification_user where notification_user.userID = ?
+        ]]>
+	</query>
+
+	<query id="insert_notification_user">
+        <![CDATA[
+          	insert into notification_user(notificationID, userID, header, body, time, url, seen) 
+          	values (?, ?, ?, ?, ?, ?, ?)
+        ]]>
+	</query>
+
+	<query id="update_notification_user">
+        <![CDATA[
+          	update notification_user as f 
+            set f.seen = ?
+            where f.notificationID = ? and f.userID = ?
+        ]]>
+	</query>
+
+	<!-- Delete a particular admin by id Query -->
+	<query id="remove_notification_user">
+         <![CDATA[        
+            delete from notification_user where notification_user.notificationID = ? and notification_user.userID = ? 
+        ]]>
+	</query>
+
+
+
+
+
+	<query id="feedback_by_userID_itemID">
+         <![CDATA[        
+            select * from feedback where feedback.userID = ? and feedback.itemID = ?
+        ]]>
+	</query>
+
+	<query id="feedback_by_userID_itemID_feedbackID">
+         <![CDATA[        
+            select * from feedback where feedback.userID = ? and feedback.itemID = ?  and feedback.feedbackID = ?
+        ]]>
+	</query>
+
+	<query id="feedback_by_itemID">
+         <![CDATA[        
+            select * from feedback where feedback.itemID = ?
+        ]]>
+	</query>
+
+	<query id="feedback_by_feedbackID">
+         <![CDATA[        
+            select * from feedback where feedback.feedbackID = ?
+        ]]>
+	</query>
+
+	<query id="insert_feedback">
+        <![CDATA[
+          	insert into feedback(feedbackID, userID, itemID, rating, review, time) 
+          	values (?, ?, ?, ?, ?, ?)
+        ]]>
+	</query>
+
+	<query id="update_feedback">
+        <![CDATA[
+          	update feedback as f 
+            set f.rating = ? , f.review = ?
+            where f.feedbackID = ? and f.userID = ?
+        ]]>
+	</query>
+
+	<!-- Delete a particular admin by id Query -->
+	<query id="remove_feedback">
+         <![CDATA[        
+            delete from feedback where feedback.feedbackID = ? and feedback.userID = ? 
+        ]]>
+	</query>
+
+
+
+
+</Querys>

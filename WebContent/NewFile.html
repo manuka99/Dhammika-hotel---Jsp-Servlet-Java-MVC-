@@ -1,0 +1,44 @@
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<title>Panel</title>
+<!-- Font Awesome -->
+<link rel="stylesheet"
+	href="https://use.fontawesome.com/releases/v5.11.2/css/all.css">
+<!-- Bootstrap core CSS -->
+<link rel="stylesheet" href="Design/panel/css/bootstrap.min.css">
+<!-- Material Design Bootstrap -->
+<link rel="stylesheet" href="Design/panel/css/mdb.min.css">
+<link href="Design/mdPro/css/addons/datatables.css" rel="stylesheet">
+<link href="Design/mdPro/css/addons/datatables.min.css" rel="stylesheet">
+<link href="Design/mdPro/css/upload-file.css" rel="stylesheet">
+</head>
+<body>
+
+	<div class="file-upload-wrapper">
+  <input type="file" id="input-file-now-custom-1" class="file-upload" data-default-file="https://mdbootstrap.com/img/Photos/Others/images/89.jpg" />
+</div>
+
+	<img class="d-block w-100"
+															src="data:image/jpg;base64,${Food.image}"
+															alt="First slide" style="height: 500px"> <input
+															type="file" id="productImage">
+
+	<script src="Design/mdPro/js/jquery-3.4.1.min.js"></script>
+	<!-- Bootstrap tooltips -->
+	<script type="text/javascript" src="Design/panel/js/popper.min.js"></script>
+	<!-- Bootstrap core JavaScript -->
+	<script type="text/javascript" src="Design/panel/js/bootstrap.js"></script>
+	<!-- MDB core JavaScript -->
+	<script type="text/javascript" src="Design/panel/js/mdb.min.js"></script>
+	<script type="text/javascript"
+		src="Design/mdPro/js/mdb-file-upload.min.js"></script>
+	<script type="text/javascript">
+		$('.file-upload').file_upload();
+	</script>
+
+</body>
+</html>

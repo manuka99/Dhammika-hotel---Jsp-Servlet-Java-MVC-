@@ -1,0 +1,276 @@
+// Saas Template styles
+body {
+  font-weight: 400;
+}
+
+.description {
+  line-height: 2rem;
+}
+
+.fa-2x {
+  margin-bottom: 0.7rem;
+}
+
+p {
+  font-size: 0.95rem;
+  line-height: 1.8rem;
+}
+h6 {
+  line-height: 1.7;
+}
+.font-small {
+  font-size: 0.9rem;
+  line-height: 1.7;
+}
+.title {
+  color: #112f6b !important;
+}
+.spacing {
+  letter-spacing: 1px;
+}
+.display-3 {
+  letter-spacing: 5px;
+}
+.intro-title {
+  font-size: 3rem;
+  line-height: 4rem;
+}
+
+.orange-text {
+  color: #fb5364 !important;
+}
+.blue-text {
+  color: #557ff9 !important;
+}
+
+.icon-area {
+  .circle-icon {
+    i {
+      box-shadow: 0 8px 19px rgba(91, 154, 251, 0.41);
+      width: 100px;
+      height: 100px;
+      line-height: 1.4;
+      padding: 1.8rem;
+      font-size: 2rem;
+      border-radius: 50%;
+      background: $white;
+      &:hover {
+        background: #ebeef9;
+      }
+    }
+  }
+}
+
+.btn-white {
+  color: #fb5364 !important;
+}
+.btn {
+  &.pink-gradient {
+    background: linear-gradient(40deg, #FF5858, #ee4392);
+    color: $white !important;
+
+    &:focus,
+    &:active {
+      background: linear-gradient(40deg, #FF5858, #ee4392);
+    }
+  }
+}
+.btn-floating {
+  box-shadow: 0 5px 11px 0 rgba(74, 124, 255, 0.24), 0 4px 15px 0 rgba(65, 97, 198, 0.15);
+  
+  &:hover {
+    box-shadow: 0 8px 17px 0 rgba(45, 81, 202, 0.2), 0 6px 20px 0 rgba(43, 51, 205, 0.19);
+  }
+}
+
+.navbar {
+  font-weight: 400;
+}
+
+.top-pink-footer {
+  background-color: #f95169;
+}
+.light-grey-background {
+  background-color: #f4f4fa;
+}
+.pink-gradient {
+  background: linear-gradient(40deg, #FF5858, #ee4392);
+}
+.mask {
+  &.rgba-gradient {
+    background: linear-gradient(45deg, rgba(255, 88, 88, 0.7), rgba(238, 66, 146, 0.8));
+  }
+  &.rgba-gradient-1 {
+    background: linear-gradient(45deg, rgba(42, 27, 161, 0.7), rgba(255, 48, 48, 0.7));
+  }
+  &.rgba-gradient7 {
+    background: linear-gradient(98deg, rgba(22, 91, 231, 0.5), rgba(255, 32, 32, 0.5));
+  }
+}
+
+// Gallery
+.gallery {
+  -webkit-column-count: 3;
+  -moz-column-count: 3;
+  column-count: 3;
+  -webkit-column-width: 33%;
+  -moz-column-width: 33%;
+  column-width: 33%;
+}
+.gallery {
+  .pics {
+    -webkit-transition: all 350ms ease;
+    transition: all 350ms ease;
+  }
+}
+.gallery {
+  .animation {
+    -webkit-transform: scale(1);
+    -ms-transform: scale(1);
+    transform: scale(1);
+  }
+}
+@media (max-width: 450px) {
+  .gallery {
+    -webkit-column-count: 1;
+    -moz-column-count: 1;
+    column-count: 1;
+    -webkit-column-width: 100%;
+    -moz-column-width: 100%;
+    column-width: 100%;
+  }
+}
+@media (max-width: 400px) {
+  .btn.filter {
+    padding-left: 1.1rem;
+    padding-right: 1.1rem;
+  }
+}
+  
+.streak {
+  &.streak-md {
+    height: auto;
+  }
+}
+.testimonial-card {
+  .card-up {
+    height: 39px;
+  }
+}
+
+.input-group.md-form.form-sm.form-3 input {
+  border: 1px solid #e0e0e0;
+  border-top-right-radius: 0.25rem;
+  border-bottom-right-radius: 0.25rem;
+}
+.input-group.md-form.form-sm.form-3 input[type=text]:focus:not([readonly]).black-border {
+  border: 1px solid #4285F4;
+  box-shadow: none;
+}
+.basic-textarea {
+  textarea {
+    &.form-control {
+      border: 1px solid #e0e0e0;
+      &:focus {
+        border: 1px solid #4285F4;
+        box-shadow: none;
+      }
+    }
+  }
+}
+  
+.dropdown {
+  .dropdown-menu {
+    .dropdown-item:hover
+    {
+      background-color: #112f6b;
+    }
+  }
+}
+
+.wrapper {
+  position: relative;
+}
+.wrapper img {
+  max-width: 100%;
+  height: auto;
+}
+.wrapper iframe {
+  display: none;
+}
+.play-btn {
+  position: absolute;
+  z-index: 1;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: transparent;
+  border: 0;
+  &:hover {
+    cursor: pointer;
+  }
+  &:focus {
+    outline: 0;
+  }
+}
+
+.intro-3 {
+  background: #ff3f71;
+  background-image: linear-gradient(120deg, #ff3c6d, #ffa76d, #ff73bb, #6caafd, #1fe4d4);
+  background-repeat: no-repeat;
+  background-size: 800% 400%;
+  animation-name: introAnimation;
+  animation-duration: 30s;
+  animation-timing-function: linear;
+  animation-delay: 0;
+  animation-iteration-count: infinite;
+}
+@keyframes introAnimation {
+  0% {
+    background-position: 0 50%
+  }
+  50% {
+    background-position: 100% 50%
+  }
+  100% {
+    background-position: 0 50%
+  }
+}
+  
+.login-page {
+  .card {
+    background-color: rgba(229, 228, 255, 0.2);
+    margin-top: 30px;
+  }
+
+  .md-form {
+    .form-control,
+    label {
+      color: $white;
+    }
+    input[type=text]:focus:not([readonly]),
+    input[type=password]:focus:not([readonly]) {
+      border-bottom: 1px solid #fb5364;
+      box-shadow: 0 1px 0 0 #fb5364;
+      & + label {
+        color: #fb5364;
+      }
+    }
+  }
+}
+
+.register-page {
+  .card {
+    background-color: rgba(255, 255, 255, 0.85);
+  }
+  p {
+    font-size: 0.9rem;
+    font-weight: 300;
+  }
+  h4 {
+    font-size: 1.3rem;
+  }
+}
+
+
+

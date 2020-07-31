@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Check Out</title>
+<style type="text/css">
+table {
+	border: 0;
+}
+
+table td {
+	padding: 10px;
+}
+</style>
+</head>
+<body>
+	<div align="center">
+		<h1>Check Out</h1>
+		<br />
+		<form action="https://sandbox.payhere.lk/pay/checkout" method="post">
+			<table>
+				<tr>
+					<td>merchant_id</td>
+					<td><input type="hidden" name="merchant_id" value="1214373" /></td>
+				</tr>
+
+				<tr>
+					<td>return_url</td>
+					<td><input type="hidden" name="return_url" value="http://localhost:8080/ecommerce/" /></td>
+				</tr>
+
+				<tr>
+					<td>cancel_url</td>
+					<td><input type="hidden" name="cancel_url " value="http://localhost:8080/ecommerce/" /></td>
+				</tr>
+
+				<tr>
+					<td>notify_url</td>
+					<td><input type="hidden" name="notify_url" value="http://localhost:8080/ecommerce/cart/" /></td>
+				</tr>
+
+				<tr>
+					<td>first_name</td>
+					<td><input type="text" name="first_name" value="manuka" /></td>
+				</tr>
+
+				<tr>
+					<td>last_name</td>
+					<td><input type="text" name="last_name" value="yasas" /></td>
+				</tr>
+
+				<tr>
+					<td>email</td>
+					<td><input type="text" name="email" value="manuka@gmail.com" /></td>
+				</tr>
+
+
+				<tr>
+					<td>phone</td>
+					<td><input type="text" name="phone" value="0771234567" /></td>
+				</tr>
+
+				<tr>
+					<td>address</td>
+					<td><input type="text" name="address" value="No.1, Galle Road" /></td>
+				</tr>
+
+
+				<tr>
+					<td>city</td>
+					<td><input type="text" name="city" value="Colombo" /></td>
+				</tr>
+
+				<tr>
+					<td>country</td>
+					<td><input type="hidden" name="country" value="Sri Lanka" /></td>
+				</tr>
+
+				<tr>
+					<td>order_id</td>
+					<td><input type="text" name="order_id" value="ItemNo12345" /></td>
+				</tr>
+
+				<tr>
+					<td>items</td>
+					<td><input type="text" name="items" value="Door bell wireless" /></td>
+				</tr>
+
+				<tr>
+					<td>currency</td>
+					<td><input type="text" name="currency" value="LKR" /></td>
+				</tr>
+
+				<tr>
+					<td>amount</td>
+					<td><input type="text" name="amount" value="1000" /></td>
+				</tr>
+
+				<tr>
+					<td colspan="2" align="center"><input type="submit"
+						value="Buy Now" /></td>
+				</tr>
+			</table>
+		</form>
+	</div>
+</body>
+</html>

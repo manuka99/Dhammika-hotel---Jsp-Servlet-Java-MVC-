@@ -1,0 +1,2609 @@
+<html lang="en" class="">
+<head>
+<!-- Required meta tags always come first -->
+<meta charset="utf-8">
+<meta name="viewport"
+	content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="x-ua-compatible" content="ie=edge">
+<meta name="theme-color" content="#33b5e5">
+<link rel="manifest" href="/manifest.json">
+<!-- Google Fonts Roboto -->
+<link rel="stylesheet"
+	href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700&amp;display=swap">
+
+
+
+<title>Bootstrap drag and drop file upload - examples &amp;
+	tutorial. Basic &amp; advanced usage - Material Design for Bootstrap</title>
+
+<link rel="shortcut icon"
+	href="https://z9t4u9f6.stackpathcdn.com/wp-content/themes/mdbootstrap4/favicon.ico">
+
+<script type="text/javascript" id="www-widgetapi-script"
+	src="https://s.ytimg.com/yts/jsbin/www-widgetapi-vflF_QJuO/www-widgetapi.js"
+	async=""></script>
+<script type="text/javascript" async=""
+	src="https://www.google-analytics.com/plugins/ua/ec.js"></script>
+<script type="text/javascript" async=""
+	src="https://www.youtube.com/iframe_api"></script>
+<script
+	src="https://connect.facebook.net/signals/config/289867067833087?v=2.9.18&amp;r=stable"
+	async=""></script>
+<script async="" src="https://connect.facebook.net/en_US/fbevents.js"></script>
+<script type="text/javascript" async=""
+	src="https://snap.licdn.com/li.lms-analytics/insight.min.js"></script>
+<script type="text/javascript" async=""
+	src="https://cdn.mouseflow.com/projects/9165eec4-fcd5-4c79-aa25-5d2d8d5eee4d.js"></script>
+<script type="text/javascript" async=""
+	src="//www.googleadservices.com/pagead/conversion_async.js"></script>
+<script type="text/javascript" async=""
+	src="https://www.google-analytics.com/analytics.js"></script>
+<script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-W7MBMN"></script>
+<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
+<script type="text/javascript">var ajax_url = 'https://mdbootstrap.com/wp-load.php';</script>
+<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
+<script type="text/javascript">var ajax_url = 'https://mdbootstrap.com/wp-load.php';</script>
+<script>(function(html){html.className = html.className.replace(/\bno-js\b/,'js')})(document.documentElement);</script>
+<script type="text/javascript">var ajax_url = 'https://mdbootstrap.com/wp-load.php';</script>
+<!-- Google Tag Manager for WordPress by gtm4wp.com -->
+<script data-cfasync="false" data-pagespeed-no-defer="">//<![CDATA[
+	var gtm4wp_datalayer_name = "dataLayer";
+	var dataLayer = dataLayer || [];
+	var gtm4wp_use_sku_instead        = 0;
+	var gtm4wp_id_prefix              = '';
+	var gtm4wp_remarketing            = false;
+	var gtm4wp_eec                    = 1;
+	var gtm4wp_classicec              = 1;
+	var gtm4wp_currency               = 'EUR';
+	var gtm4wp_product_per_impression = 0;
+	var gtm4wp_needs_shipping_address = false;
+//]]>
+</script>
+<!-- End Google Tag Manager for WordPress by gtm4wp.com -->
+<!-- This site is optimized with the Yoast SEO plugin v14.2 - https://yoast.com/wordpress/plugins/seo/ -->
+<meta name="description"
+	content="MD Bootstrap File Upload plugin is an extension that allows you to upload files by using drag and drop functionality. Easy to use, setup and customize.">
+<meta name="robots" content="index, follow">
+<meta name="googlebot"
+	content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<meta name="bingbot"
+	content="index, follow, max-snippet:-1, max-image-preview:large, max-video-preview:-1">
+<link rel="canonical"
+	href="https://mdbootstrap.com/plugins/jquery/file-upload/">
+<meta property="og:locale" content="en_US">
+<meta property="og:type" content="article">
+<meta property="og:title"
+	content="Bootstrap drag and drop file upload - examples &amp; tutorial. Basic &amp; advanced usage">
+<meta property="og:description"
+	content="MD Bootstrap File Upload plugin is an extension that allows you to upload files by using drag and drop functionality. Easy to use, setup and customize.">
+<meta property="og:url"
+	content="https://mdbootstrap.com/plugins/jquery/file-upload/">
+<meta property="og:site_name" content="Material Design for Bootstrap">
+<meta property="article:publisher"
+	content="https://www.facebook.com/mdbootstrap">
+<meta property="article:modified_time"
+	content="2019-03-07T09:12:28+00:00">
+<meta property="og:image"
+	content="https://z9t4u9f6.stackpathcdn.com/wp-content/uploads/2018/10/plugin-fileupload-jquery-1.jpg">
+<meta property="og:image:width" content="700">
+<meta property="og:image:height" content="367">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title"
+	content="Bootstrap drag and drop file upload - examples &amp; tutorial. Basic &amp; advanced usage">
+<meta name="twitter:description"
+	content="MD Bootstrap File Upload plugin is an extension that allows you to upload files by using drag and drop functionality. Easy to use, setup and customize.">
+<meta name="twitter:image"
+	content="https://z9t4u9f6.stackpathcdn.com/wp-content/uploads/2018/10/plugin-fileupload-jquery-1.jpg">
+<meta name="twitter:creator" content="@MDBootstrap">
+<meta name="twitter:site" content="@MDBootstrap">
+<!-- / Yoast SEO plugin. -->
+
+
+<link rel="dns-prefetch" href="//s.w.org">
+<script type="text/javascript">
+			window._wpemojiSettings = {"baseUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/72x72\/","ext":".png","svgUrl":"https:\/\/s.w.org\/images\/core\/emoji\/12.0.0-1\/svg\/","svgExt":".svg","source":{"concatemoji":"https:\/\/mdbootstrap.com\/wp-includes\/js\/wp-emoji-release.min.js?ver=5.4.2"}};
+			/*! This file is auto-generated */
+			!function(e,a,t){var r,n,o,i,p=a.createElement("canvas"),s=p.getContext&&p.getContext("2d");function c(e,t){var a=String.fromCharCode;s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,e),0,0);var r=p.toDataURL();return s.clearRect(0,0,p.width,p.height),s.fillText(a.apply(this,t),0,0),r===p.toDataURL()}function l(e){if(!s||!s.fillText)return!1;switch(s.textBaseline="top",s.font="600 32px Arial",e){case"flag":return!c([127987,65039,8205,9895,65039],[127987,65039,8203,9895,65039])&&(!c([55356,56826,55356,56819],[55356,56826,8203,55356,56819])&&!c([55356,57332,56128,56423,56128,56418,56128,56421,56128,56430,56128,56423,56128,56447],[55356,57332,8203,56128,56423,8203,56128,56418,8203,56128,56421,8203,56128,56430,8203,56128,56423,8203,56128,56447]));case"emoji":return!c([55357,56424,55356,57342,8205,55358,56605,8205,55357,56424,55356,57340],[55357,56424,55356,57342,8203,55358,56605,8203,55357,56424,55356,57340])}return!1}function d(e){var t=a.createElement("script");t.src=e,t.defer=t.type="text/javascript",a.getElementsByTagName("head")[0].appendChild(t)}for(i=Array("flag","emoji"),t.supports={everything:!0,everythingExceptFlag:!0},o=0;o<i.length;o++)t.supports[i[o]]=l(i[o]),t.supports.everything=t.supports.everything&&t.supports[i[o]],"flag"!==i[o]&&(t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&t.supports[i[o]]);t.supports.everythingExceptFlag=t.supports.everythingExceptFlag&&!t.supports.flag,t.DOMReady=!1,t.readyCallback=function(){t.DOMReady=!0},t.supports.everything||(n=function(){t.readyCallback()},a.addEventListener?(a.addEventListener("DOMContentLoaded",n,!1),e.addEventListener("load",n,!1)):(e.attachEvent("onload",n),a.attachEvent("onreadystatechange",function(){"complete"===a.readyState&&t.readyCallback()})),(r=t.source||{}).concatemoji?d(r.concatemoji):r.wpemoji&&r.twemoji&&(d(r.twemoji),d(r.wpemoji)))}(window,document,window._wpemojiSettings);
+		</script>
+<script
+	src="https://mdbootstrap.com/wp-includes/js/wp-emoji-release.min.js?ver=5.4.2"
+	type="text/javascript" defer=""></script>
+<style type="text/css">
+img.wp-smiley, img.emoji {
+	display: inline !important;
+	border: none !important;
+	box-shadow: none !important;
+	height: 1em !important;
+	width: 1em !important;
+	margin: 0 .07em !important;
+	vertical-align: -0.1em !important;
+	background: none !important;
+	padding: 0 !important;
+}
+</style>
+<link rel="stylesheet" id="dashicons-css"
+	href="https://z9t4u9f6.stackpathcdn.com/wp-includes/css/dashicons.min.css?ver=5.4.2"
+	type="text/css" media="all">
+<link rel="stylesheet" id="admin-bar-css"
+	href="https://z9t4u9f6.stackpathcdn.com/wp-includes/css/admin-bar.min.css?ver=5.4.2"
+	type="text/css" media="all">
+<link rel="stylesheet" id="wp-block-library-css"
+	href="https://z9t4u9f6.stackpathcdn.com/wp-includes/css/dist/block-library/style.min.css?ver=5.4.2"
+	type="text/css" media="all">
+<link rel="stylesheet" id="wc-block-style-css"
+	href="https://z9t4u9f6.stackpathcdn.com/wp-content/plugins/woocommerce/packages/woocommerce-blocks/build/style.css?ver=2.5.16"
+	type="text/css" media="all">
+<link rel="stylesheet" id="contact-form-7-css"
+	href="https://z9t4u9f6.stackpathcdn.com/wp-content/plugins/contact-form-7/includes/css/styles.css?ver=5.1.9"
+	type="text/css" media="all">
+<style id="woocommerce-inline-inline-css" type="text/css">
+.woocommerce form .form-row .required {
+	visibility: visible;
+}
+</style>
+<link rel="stylesheet" id="wsl-widget-css"
+	href="https://z9t4u9f6.stackpathcdn.com/wp-content/plugins/wordpress-social-login/assets/css/style.css?ver=5.4.2"
+	type="text/css" media="all">
+<link rel="stylesheet" id="compiled.css-css"
+	href="https://z9t4u9f6.stackpathcdn.com/wp-content/themes/mdbootstrap4/css/compiled-4.19.0.min.css?ver=4.19.0"
+	type="text/css" media="all">
+<script type="text/javascript">
+/* <![CDATA[ */
+var mdw_search_object = {"ajaxurl":"https:\/\/mdbootstrap.com\/wp-admin\/admin-ajax.php","search_tree":{"16":{"title":"bootstrap css - visual guide to css classes & components of bootstrap 4","description":"learn how to use bootstrap css at basic and advanced level. read our visual guide and comprehensive tutorial about the newest bootstrap 4.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=16","wptitle":"MD Bootstrap CSS"},"26":{"title":"bootstrap typography - examples, tutorial & advanced usage","description":"bootstrap typography is the style and appearance of headings, lists, body text and basic paragraphs - 14 examples coming along with descriptions.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=26","wptitle":"Typography"},"97":{"description":"bootstrap modal is lightweight, but powerful & multipurpose popup. learn how to manipulate size, styles & position. multiple examples and detailed tutorial.","title":"bootstrap modal - examples & tutorial. basic & advanced usage","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=97","wptitle":"Modals"},"105":{"description":"bootstrap scrollspy is a plugin which shows on the navigation list current position on the page depends on the scroll position defined by the user.","title":"bootstrap scrollspy - examples & tutorial. basic & advanced usage","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=105","wptitle":"ScrollSpy"},"107":{"description":"bootstrap sidenav is a vertical navigation component which apart from traditional, text links, might embed icons, dropdowns, avatars or search forms.","title":"bootstrap sidebar \/ sidenav - examples, tutorial & advanced usage","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=107","wptitle":"SideNav1"},"111":{"title":"+70 bootstrap animations - examples & tutorial. basic & advanced usage","description":"bootstrap animations are illusions of motions for web elements. +70 animations generated by css only, work properly on every browser.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=111","wptitle":"Animations"},"170":{"title":"bootstrap carousel - examples, tutorial & advanced usage","description":"bootstrap carousel is responsive and interactive slideshow which is created for presenting content, especially images and videos.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=170","wptitle":"Carousel"},"290":{"description":"bootstrap panels are bordered boxes where you can place texts, lists, tables and other content. panels are similar to cards, but they don't include media.","title":"bootstrap panels - examples & tutorial. basic & advanced usage","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=290","wptitle":"Panels"},"531":{"description":"bootstrap social buttons are buttons which are dedicated for social media usage. font awesome covers icons for all major platforms.","title":"bootstrap social buttons - examples & tutorial. basic & advanced usage","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=531","wptitle":"Social buttons"},"1195":{"title":"material design logo generator","description":"over 600 icons with completely different and customizable styles coming in a form of user-friendly logo creator, free for both commercial and personal use.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=1195","wptitle":"Material Design Logo Generator"},"1201":{"description":"bootstrap hover effect appears when a user positions computer cursor over an element without activating it. hover effects make a website more interactive.","title":"bootstrap hover effects - examples & tutorial. basic & advanced usage","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=1201","wptitle":"Hover effects"},"2336":{"description":"bootstrap masks alter the visibility of an element by either partially or fully hiding it. masks are used to make content more visible in the picture.","title":"bootstrap masks - examples & tutorial. basic & advanced usage","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=2336","wptitle":"CSS Masks"},"2818":{"title":"licensing details and usage restrictions","description":"you are granted the use of products under the conditions featured in the table. ownership stays with material design for bootstrap, along with the copyright holders and you must abide by the following terms and conditions.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=2818","wptitle":"License"},"3123":{"description":"bootstrap charts are graphical representations of data. charts come in different sizes and shapes: bar, line, pie, radar, polar and more.","title":"bootstrap charts guideline - examples & tutorial. basic & advanced usage","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=3123","wptitle":"Charts"},"3145":{"title":"md bootstrap changelog - detailed list of changes in the newest release","description":"material design for bootstrap provides a detailed list of changes in each release. read it carefully to do not miss any important update.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=3145","wptitle":"ChangeLog"},"4644":{"description":"bootstrap smooth scroll is an animated movement from a trigger - button, link or any other clickable element - to another place of the same page.","title":"bootstrap scrollbar & smoothscroll - examples & tutorial. basic & advanced usage","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=4644","wptitle":"Scrollbar & smooth scroll"},"8237":{"title":"visual guide to bootstrap grid - examples, tutorial & advanced usage","description":"bootstrap grid is a system of columns and rows which is used for creating a page layout. mobile-friendly, responsive and can be rearranged depends on screen","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=8237","wptitle":"Grid"},"8240":{"title":"bootstrap media - examples & tutorial. basic & advanced usage","description":"bootstrap media provides you with various ways of presenting images and videos to your audience thanks to bootstrap way of handling those elements.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=8240","wptitle":"Media"},"8251":{"title":"bootstrap dropdown - examples & tutorial. basic & advanced usage","description":"bootstrap dropdown is a toggleable menu embedding additional links or content. it allows you to construct advanced navigation and link categorization.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=8251","wptitle":"Dropdowns"},"8253":{"description":"bootstrap list groups are a flexible component which displays not only simple list of elements but complex custom content.","title":"bootstrap list group - examples & tutorial. basic & advanced usage","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=8253","wptitle":"List group"},"8255":{"title":"bootstrap labels and badges - examples, tutorial & advanced usage","description":"bootstrap labels and badges help you highlight additional information about the content. used for product badges, article tags and other labeling components","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=8255","wptitle":"Labels and Badges"},"8257":{"title":"bootstrap progress bars \/ loaders - examples & tutorial. basic & advanced usage","description":"bootstrap progress bars \/ loader is a component which displays a progress of a process in which user is involved. their color, shape, and animation can be customized.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=8257","wptitle":"Progress bars \/ loaders"},"8260":{"title":"bootstrap tabs - examples & tutorial. basic & advanced usage","description":"bootstrap tabs are components which separate content placed in the same wrapper but in the separate pane. only one pane can be displayed at the time.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=8260","wptitle":"Tabs"},"8262":{"title":"bootstrap alerts guideline - examples & tutorial. basic & advanced usage","description":"bootstrap alerts are feedback messages which are displayed after specific actions preceded by the user. length of the text is not limited.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=8262","wptitle":"Alerts"},"8265":{"title":"bootstrap date picker - examples, tutorial & advanced usage","description":"bootstrap date picker is a plugin that adds a function of selecting time without the necessity of using custom javascript code.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=8265","wptitle":"Date Picker1"},"8268":{"title":"bootstrap lightbox - examples, tutorial & advanced usage","description":"bootstrap lightbox is a group of images combined in one responsive gallery. elements are grouped in thumbnail grid, which can be displayed as a slideshow.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=8268","wptitle":"LightBox"},"8274":{"title":"bootstrap popovers - examples & tutorial. basic & advanced usage","description":"bootstrap popover is a component which displays a box with a content after a click on an element - similar to the tooltip but can contain more content.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=8274","wptitle":"Popovers"},"8278":{"title":"bootstrap tooltip - examples, tutorial & advanced usage","description":"bootstrap tooltips are little clouds with a brief text message, triggered by clicking on a specific element or hovering over it.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=8278","wptitle":"Tooltips"},"8284":{"title":"bootstrap waves effect - examples & tutorial. basic & advanced usage","description":"bootstrap waves effect is an impression of circular overlay movement, triggered by clicking the object, flowing from the center of the click.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=8284","wptitle":"Waves effect"},"8376":{"description":"bootstrap collapse is a component which toggles content. useful for grouping great amount of texts and\/or graphics into expanding and collapsing items.","title":"bootstrap collapse - examples, tutorial & advanced usage","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=8376","wptitle":"Collapse"},"8796":{"description":"the biggest collection of bootstrap font awesome icons. easy to use and customize. available in different colors, shapes, and size.","title":"bootstrap icons list - free and amaizing font awesome icons","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=8796","wptitle":"Icons list"},"8842":{"description":"bootstrap time picker is a jquery plugin which allows a user to select a time in the bootstrap form without the necessity of using custom javascript code.","title":"bootstrap time picker - examples & tutorial. basic & advanced usage","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=8842","wptitle":"Time Picker1"},"8957":{"title":"half carousel template","description":"enhance your page with image carousel and add additional content below it thanks to half carousel template giving it both modern look and information value.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=8957","wptitle":"Half Carousel Template"},"8959":{"description":"full page carousel template is a full page image background slider built using the material design for bootstrap carousel.","title":"full page image carousel","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=8959","wptitle":"Full Page Image Carousel"},"8961":{"title":"full background image template","description":"entertain your users and give your homepage more emotional weight by using this minimalistic full background image template.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=8961","wptitle":"Full Background Image Template"},"8966":{"title":"full page video carousel template","description":"why would you limit your carousel to static photos only? now with new video carousel template, you can embed video as easy as pictures.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=8966","wptitle":"Full Page Video Carousel"},"8968":{"title":"corporate style template","description":"corporate style template is a clean and elegant theme suitable for displaying your product, app, business and bring your clients the best value.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=8968","wptitle":"Corporate Style Template"},"8975":{"description":"free and exclusive ecommerce homepage template made especially for entrepreneurs who want to give their clients the best value.","title":"ecommerce homepage template","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=8975","wptitle":"Ecommerce Homepage Template"},"8980":{"description":"ecommerce product page template is a fully customizable and suitable for e-commerce websites of any purpose coming with number of user-friendly components.","title":"ecommerce product page template","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=8980","wptitle":"Ecommerce Product Page Template"},"8983":{"description":"distinct your blog from the others by creating it in a spirit of material design and give it this enchanted form by using this blog homepage template.","title":"blog homepage template","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=8983","wptitle":"Blog Homepage Template"},"8986":{"description":"jumbotron template is a large, yet minimalistic form of design perfect for focusing your user\u2019s attention on most important features.","title":"jumbotron with features template","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=8986","wptitle":"Jumbotron with Features Template"},"8989":{"description":"bootstrap basic landing page template made in material design style.","title":"bootstrap basic landing page template","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=8989","wptitle":"Basic Landing Page"},"9106":{"title":"bootstrap mobile gestures - examples & tutorial. basic & advanced usage","description":"bootstrap mobile gestures are touch-based interactions with mobile devices. various of different fingers movements indicate particular components responses.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=9106","wptitle":"Mobile"},"9123":{"title":"bootstrap stickycontent - examples & tutorial. basic & advanced usage","description":"bootstrap sticky content (affix) is a plugin which allows elements to be locked in the particular area of the page. often used in navigation menus.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=9123","wptitle":"StickyContent"},"9139":{"title":"browsers and devices","description":"mdbootstrap should display and function correctly the latest, stable releases of all major browsers and platforms. most mobile devices and deskopt browsers are supported.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=9139","wptitle":"Browsers and devices"},"9724":{"description":"a 1 column listing template is a most informative and comprehensible form of presenting your content to the users of yours.","title":"1 column listing template","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=9724","wptitle":"One Column Listing"},"9728":{"description":"fully responsive and mobile friendly two column layout containing multiple cards with a proper headline and a brief description.","title":"2 columns listing template","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=9728","wptitle":"Two Columns Listing"},"9733":{"description":"showcase a larger group of content with a brief description in an eye-pleasant way in a form of 3 column listing template.","title":"3 columns listing template","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=9733","wptitle":"Three Columns Listing"},"10258":{"description":"bootstrap skins are basic color schemes which can be easily applied to any website providing ready-to-use full-page web design.","title":"bootstrap skins - examples & tutorial. basic & advanced usage","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=10258","wptitle":"Skins"},"10260":{"description":"bootstrap blog components is a set of components which are dedicated to building a blog or any other content-oriented website.","title":"bootstrap blog components - examples & tutorial. basic & advanced usage","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=10260","wptitle":"Blog Components"},"10263":{"title":"bootstrap e-commerce components - examples, tutorial & advance usage","description":"bootstrap e-commerce components is a set of components which are necessary to build online stores and any other e-commerce business.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=10263","wptitle":"E-commerce components"},"10268":{"description":"bootstrap input is a special field which is used in order to receive data from the user. used mostly in a variety of web-based forms.","title":"bootstrap inputs - examples & tutorial. basic & advanced usage","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=10268","wptitle":"Inputs"},"10270":{"description":"bootstrap pagination is a component used when content is divided into separate pages to display the page numbers and enable navigation between them.","title":"bootstrap pagination - examples & tutorial. basic & advanced usage","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=10270","wptitle":"Pagination"},"10273":{"description":"bootstrap select is a form control which after a click displays a collapsable list of multiple values which can be used in forms, menus or surveys.","title":"bootstrap select - examples & tutorial. basic & advanced usage","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=10273","wptitle":"Select"},"10277":{"title":"material design blocks - 400+ stunning bootstrap 4 sections","description":"an impressive set of html\/css design blocks. multiple categories like e-commerce, dashboards, landing page, blog and many more.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=10277","wptitle":"Material Design Blocks"},"10279":{"description":"bootstrap blog sections are a combination of standard bootstrap components that together create a consistent design perfect for blog pages.","title":"bootstrap blog sections - examples, tutorial & advanced usage","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=10279","wptitle":"Blog sections"},"10282":{"description":"bootstrap contact sections are a combination of standard bootstrap components that together create a consistent design perfect for contact pages.","title":"bootstrap contact sections - examples, tutorial & advanced usage","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=10282","wptitle":"Contact sections"},"10284":{"description":"bootstrap e-commerce sections are a combination of standard bootstrap components that together create a consistent design perfect for e-commerce pages.","title":"bootstrap e-commerce sections - examples, tutorial & advanced usage","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=10284","wptitle":"E-commerce sections"},"10286":{"description":"bootstrap features sections are a combination of standard bootstrap components that together create a consistent design perfect for features pages.","title":"bootstrap features sections - examples, tutorial & advanced usage","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=10286","wptitle":"Features sections"},"10288":{"description":"bootstrap intros sections are a combination of standard bootstrap components that together create a consistent design perfect for intros pages.","title":"bootstrap intros sections - examples, tutorial and advanced usage","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=10288","wptitle":"Intros"},"10290":{"title":"bootstrap magazine sections - examples, tutorial & advanced usage","description":"bootstrap magazine sections are a combination of standard bootstrap components that together create a consistent design perfect for magazine pages.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=10290","wptitle":"Magazine sections"},"10292":{"description":"bootstrap projects sections are a combination of standard bootstrap components that together create a consistent design perfect for projects pages.","title":"bootstrap projects sections - examples, tutorial & advanced usage","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=10292","wptitle":"Projects sections"},"10294":{"title":"bootstrap team sections - examples, tutorial & advanced usage","description":"bootstrap team sections are a combination of standard bootstrap components that together create a consistent design perfect for team pages.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=10294","wptitle":"Team sections"},"10296":{"description":"four forms of bootstrap testimonials sections, made with material design patterns, ready to be used on you own website project.","title":"bootstrap testimonials sections","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=10296","wptitle":"Testimonials sections"},"10739":{"title":"md bootstrap newsletter - most important news, updates & tutorials","description":"md bootstrap newsletter - easy unsubscription, no spam messages. we'll write rarely, but only the best content. specify your preferences and stay up to date","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=10739","wptitle":"Newsletter"},"10767":{"description":"bootstrap parallax is a design effect visible while scrolling down - background image is moving at a different speed than the foreground content.","title":"bootstrap parallax - examples & tutorial. basic & advanced usage","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=10767","wptitle":"Parallax"},"11245":{"title":"bootstrap food order homepage","description":"food order homepage is fully customized template designed exclusively for restaurants and businesses related to the industry.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=11245","wptitle":"Food Order Homepage"},"11820":{"description":"material design for bootstrap affiliate program gives you an opportunity to be a part of our success and resale mdb in variety of ways.","title":"material design for bootstrap affiliate program","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=11820","wptitle":"MDB Affiliate Program"},"11824":{"description":"interested in cooperation with our team? plan your idea, set the dates and write to us! we are eager to participate in any important projects. learn more.","title":"material design for bootstrap sponsorship","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=11824","wptitle":"Material Design for Bootstrap Sponsorship"},"11850":{"description":"the biggest open source collection of stunning, free templates built with bootstrap 4 and material design. admin, e-commerce, landing page, blog and many more. free for personal and commercial use. fully responsive and cross-browser compatible.","title":"free bootstrap 4 templates - stunning, responsive material design themes","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=11850","wptitle":"Free Bootstrap Templates &amp; Themes"},"11885":{"description":"here you can find all the answers to the most frequently asked questions related to mdbootstrap. write to us if you need more information.","title":"mdbootstrap - frequently asked questions","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=11885","wptitle":"MDBootstrap - Frequently Asked Questions"},"13575":{"description":"bootstrap social sections are a combination of standard bootstrap components that together create a consistent design perfect for social pages.","title":"bootstrap social sections - examples, tutorial & advanced usage","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=13575","wptitle":"Social Sections"},"13708":{"description":"bootstrap flexbox is a utility for managing position of the items in a container and distributes space between them in a more efficient way.","title":"visual guide to bootstrap flexbox - examples, tutorial & advantage usage","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=13708","wptitle":"Flexbox"},"15052":{"title":"bootstrap 4 beta released! read summary and tutorial.","description":"two years of development. 5,000 commits, 650+ files changed, 67,000 lines added, and 82,000 lines deleted. bootstrap 4 beta is finally here!","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=15052","wptitle":"Bootstrap 4 beta"},"15525":{"title":"contact us | material design for bootstrap","description":"need help? contact mdb to get the most detailed answer for product inquires, technical questions, license usage and more.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=15525","wptitle":"Contact"},"16510":{"description":"bootstrap grid system allows you to create multiple combinations of columns and rows, changing the overall feeling of your project and its ui structure.","title":"bootstrap grid examples - examples & tutorial. basic & advanced usage","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=16510","wptitle":"Grid examples"},"16512":{"description":"bootstrap navigation is a combination of navbar, sidenav, and footer in various forms and different functionalities like non-fixed navbar or hidden sidenav.","title":"bootstrap navigation \/ header - examples & tutorial. basic & advanced usage","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=16512","wptitle":"Navigation \/ Bootstrap header"},"16514":{"description":"bootstrap utilities for layout are a group of helpers, which is useful in showing, hiding, aligning, and spacing content.","title":"bootstrap utilities - examples & tutorial. basic & advanced usage","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=16514","wptitle":"Utilities for layout"},"16518":{"description":"bootstrap code is a set of classes class which is used for styling text as inline codes, variables, users inputs, sample outputs or blocks of code.","title":"bootstrap code - examples & tutorial. basic & advanced usage","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=16518","wptitle":"Code"},"16520":{"description":"bootstrap figures are commonly used elements for displaying images with the caption. a caption can be left-aligned or right-align.","title":"bootstrap figures - examples & tutorial. basic & advanced usage","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=16520","wptitle":"Figures"},"16522":{"description":"bootstrap images are automatically adjusted to all screen sizes - image will never be larger than parent elements. its styles can be changed via classes.","title":"bootstrap images - examples & tutorial. basic & advanced usage","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=16522","wptitle":"Images"},"16526":{"description":"bootstrap borders are lines placed on the edges of buttons, images, and other web elements. additionally, border-radius class rounds the elements corners.","title":"bootstrap borders - examples & tutorial. basic & advanced usage","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=16526","wptitle":"Borders"},"16528":{"description":"bootstrap clearfix is a utility which to automatically clear child elements, so a user doesn't have to add additional markup.","title":"bootstrap clearfix - examples & tutorial. basic & advanced usage","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=16528","wptitle":"Clearfix"},"16530":{"title":"bootstrap close icon - examples & tutorial. basic & advanced usage","description":"bootstrap close icon is an element which is used for dismissing components like modals and alerts. see how easy implementation is.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=16530","wptitle":"Close icon"},"16532":{"description":"bootstrap display is a property which applies to many elements and specifies the type of rendering box used for an element.","title":"bootstrap display - examples & tutorial. basic & advanced usage","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=16532","wptitle":"Display property"},"16534":{"description":"image replacement is a utility that lets you swap text for background images by adding a single class.","title":"bootstrap image replacement - examples, tutorial & advanced usage","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=16534","wptitle":"Image replacement"},"16536":{"title":"bootstrap visibility utilities - examples & tutorial. basic & advanced usage","description":"bootstrap visibility class allows controlling the visibility of elements without changing the display. this utility keep content visible for screen readers.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=16536","wptitle":"Visibility"},"16538":{"description":"bootstrap position utilities are helpful for quickly placing a component outside the normal document flow. see a handful of fixed position classes.","title":"bootstrap position - examples & tutorial. basic & advanced usage","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=16538","wptitle":"Position"},"16540":{"title":"bootstrap embeds - examples & tutorial. basic & advanced usage","description":"bootstrap embeds is a utility which helps you insert video or slideshow in the page keeping width of the parent and scales on any device.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=16540","wptitle":"Embeds"},"16542":{"title":"bootstrap screenreaders - examples & tutorial. basic & advanced usage","description":"bootstrap screenreaders is an assistive technology which hides elements on every device except screen readers with a single class.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=16542","wptitle":"Screenreaders"},"16544":{"title":"bootstrap sizing - examples & tutorial. basic & advanced usage","description":"bootstrap sizing is a utility which allows you to adjust elements width or height. there are 4 available values: 25%, 50%, 75% and 100%.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=16544","wptitle":"Sizing"},"16546":{"title":"bootstrap spacing - examples & tutorial. basic & advanced usage","description":"bootstrap spacing is a utility which assigns responsive margin or padding classes to elements to modify its display position.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=16546","wptitle":"Spacing"},"16548":{"description":"bootstrap text utilities are a group of text modifiers which change text alignment, wrapping, letter capitalization, weight, and italics.","title":"bootstrap text utilities - examples & tutorial. basic & advanced usage","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=16548","wptitle":"Text utilities"},"16550":{"description":"bootstrap vertical align is a utility that specifies the alignment of elements. works with inline, inline-block, inline-table, and table cell elements only.","title":"bootstrap vertical align - examples & tutorial. basic & advanced usage","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=16550","wptitle":"Vertical align"},"16558":{"description":"bootstrap footer is an additional navigation for the website. it can hold links, buttons, company info, copyrights, forms and many other elements.","title":"bootstrap footer - examples & tutorial. basic & advanced usage","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=16558","wptitle":"Footer"},"16564":{"title":"bootstrap flipping cards - examples & tutorial. basic & advanced usage","description":"bootstrap flipping card is a card animation that gives an element effect of flipping to the other side upon the interaction.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=16564","wptitle":"Flipping cards"},"16566":{"title":"bootstrap card animation - examples & tutorial. basic & advanced usage","description":"bootstrap card animations is a set of standard illusions of motions that can be applied to the bootstrap cards to improve the user experience.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=16566","wptitle":"Card animation"},"22665":{"description":"bootstrap layout includes responsive breakpoints in grid system for providing mobile-first experience and z-index - a third axis to arrange content.","title":"bootstrap layout - examples & tutorial. basic & advanced usage","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=22665","wptitle":"Layout"},"43902":{"title":"+300 bootstrap colors - examples & tutorial. basic & advanced usage","description":"bootstrap colors is a sensational palette of 300 delightful colors, which will aid you in creating inviting, consistent design.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=43902","wptitle":"Colors"},"43903":{"description":"bootstrap shadow is an effect used in web elements which provides important visual cues about objects' depth and directional movement.","title":"bootstrap shadows \/ material design shadows - examples, tutorial & usage","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=43903","wptitle":"Shadows \/ Material Design shadows"},"43904":{"title":"bootstrap table - examples & tutorial. basic & advanced usage","description":"bootstrap tables - basic and advanced usage. fully functional, responsive examples with search and sort options & pagination, buttons & icons elements.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=43904","wptitle":"Table"},"43905":{"title":"getting started with material design for bootstrap","description":"see how easy it is to install and use free material design for bootstrap ui kit. you need only 5 minutes to start creating stunning websites with no effort.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=43905","wptitle":"Download"},"43906":{"title":"premium bootstrap templates - responsive bootstrap 4 themes","description":"stunning and responsive templates created by the google material design guidelines with the power of the newest bootstrap 4.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=43906","wptitle":"Premium Bootstrap Templates &amp; Themes"},"43907":{"title":"bootstrap components - visual guide to components of bootstrap 4","description":"learn how to use bootstrap components at basic and advanced level. read our visual guide and comprehensive tutorial about the newest bootstrap 4.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=43907","wptitle":"Components"},"43909":{"description":"bootstrap buttons are components which are triggering a desirable user interaction. easy to customize in terms of size, shape, and color.","title":"bootstrap buttons - examples & tutorial. basic & advanced usage","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=43909","wptitle":"Buttons"},"43910":{"description":"bootstrap cards are components which display content build of different elements with characteristic shadows, depth and hover effects.","title":"bootstrap cards - examples & tutorial. basic & advanced usage","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=43910","wptitle":"Cards"},"43911":{"title":"bootstrap forms - examples & tutorial. basic & advanced usage","description":"bootstrap forms are input-based components which are designed to collect users data. examples of login, register, subscription, contact & more forms.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=43911","wptitle":"Forms"},"43912":{"description":"bootstrap icons usage is a quick tutorial which describes the proper way of using font awesome icons in bootstrap framework.","title":"bootstrap icons - examples & tutorial. basic & advanced usage","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=43912","wptitle":"Icons usage"},"43913":{"description":"bootstrap navbar is a horizontal navigation component which apart from traditional, text links, might embed icons, dropdowns, avatars or search forms.","title":"bootstrap navbar - examples & tutorial. basic & advanced usage","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=43913","wptitle":"Navbar"},"43966":{"title":"bootstrap jumbotron - examples & tutorial. basic & advanced usage","description":"bootstrap jumbotron is a responsive component which the main goal is to focus visitor's attention or highlight the special piece of information.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=43966","wptitle":"Jumbotron"},"43968":{"description":"bootstrap iframe is an html document which is embedded in another html doc on a web page. iframes are used to insert content from another source.","title":"bootstrap iframe - examples & tutorial. basic & advanced usage","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=43968","wptitle":"IFrame"},"43969":{"title":"bootstrap float - examples & tutorial. basic & advanced usage","description":"bootstrap float is a utility which specified whether an element will be placed on the right or left side of a container. floating may be also disabled.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=43969","wptitle":"Float"},"43970":{"title":"bootstrap steps (stepper) - examples & tutorial. basic & advanced usage","description":"bootstrap stepper is a component that displays content as a process with defined by user milestones. following steps are separated and connected by buttons.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=43970","wptitle":"Steps (stepper)"},"43977":{"description":"bootstrap checkbox is a component used for allowing a user to make a multiple choice. broadly used in the forms and surveys.","title":"bootstrap checkbox - examples & tutorial. basic & advanced usage","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=43977","wptitle":"Checkbox"},"43980":{"title":"bootstrap multiselect - examples & tutorial. basic & advanced usage","description":"bootstrap multiselect is a jquery based plugin that allows users to tick multiple options from a standard bootstrap select.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=43980","wptitle":"Multiselect"},"45098":{"description":"bootstrap contact forms are components designed to collect users info in exchange for providing them information, promotions and content usually by emails.","title":"bootstrap contact forms - examples & tutorial. basic & advanced usage","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=45098","wptitle":"Contact form"},"45832":{"title":"bootstrap radio button - examples & tutorial. basic & advanced usage","description":"bootstrap radio buttons are option buttons, which allows users to choose one of a predefined set of two or more options. commonly used in forms and surveys.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=45832","wptitle":"Radio button"},"45876":{"title":"bootstrap accordion - examples & tutorial. basic & advanced usage","description":"bootstrap accordion is a component which organizes content within collapsable items. accordion allows showing only one collapsed item at the same time.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=45876","wptitle":"Accordion"},"45878":{"title":"bootstrap breadcrumb - examples & tutorial. basic & advanced usage","description":"bootstrap breadcrumbs are navigation elements which indicate a current location on the website. breadcrumbs show a hierarchy of the current location as well","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=45878","wptitle":"Breadcrumb"},"45880":{"title":"bootstrap file input - examples & tutorial. basic & advanced usage","description":"bootstrap file input is a field which user can use to upload one or more files (photos, documents or any other file type) from the local storage.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=45880","wptitle":"File Input"},"45885":{"title":"bootstrap gallery - examples & tutorial. basic & advanced usage","description":"bootstrap gallery is a component which compiles a number of media in one interactive collection presented in basic or more advanced lightboxes.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=45885","wptitle":"Gallery"},"45921":{"title":"bootstrap textarea - examples & tutorial. basic & advanced usage","description":"bootstrap textarea is an input dedicated for a large volume of text. it may be used in a variety of components like forms, comment sections, and forums.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=45921","wptitle":"Textarea"},"45930":{"title":"bootstrap modal form - examples & tutorial. basic & advanced usage","description":"bootstrap modal forms are displayed-on-action pop-up forms that used for gathering data from a website visitors and register or log users.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=45930","wptitle":"Modal Form"},"46002":{"title":"bootstrap search - examples & tutorial. basic & advanced usage","description":"bootstrap search is a component which enables a process of finding words, sentences, and numbers in the collection of documents, web pages or other sources.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=46002","wptitle":"Search"},"46047":{"title":"bootstrap google map - examples & tutorial. basic & advanced usage","description":"bootstrap google map is a component which displays a map of an area defined by a user. maps can be used in components like forms and modals.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=46047","wptitle":"Google Map"},"46062":{"title":"bootstrap switch \/ toggle - examples & tutorial. basic & advanced usage","description":"bootstrap switch \/ toggle is a simple component used for activating one of two predefined options. commonly used as an on\/off button.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=46062","wptitle":"Switch \/ Bootstrap toggle"},"46094":{"title":"bootstrap slider - examples & tutorial. basic & advanced usage","description":"bootstrap slider is an interactive component that lets the user swiftly slide through possible values spread on the desired range.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=46094","wptitle":"Slider"},"46216":{"title":"material design for bootstrap sitemap","description":"a clear and comprehensive group of lists with all the components and sections of the material design for bootstrap documentation.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=46216","wptitle":"MD Bootstrap Sitemap"},"46281":{"title":"bootstrap mega menu - examples & tutorial. basic & advanced usage","description":"bootstrap mega menu is a navigation component which enhances standard navbar features. extended dropdown contains images and categorized links.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=46281","wptitle":"Mega Menu"},"46338":{"description":"bootstrap input group is a set of fields used for collecting data entered by users. usually containing buttons, text areas or other input.","title":"bootstrap input group","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=46338","wptitle":"Input Group"},"46390":{"title":"bootstrap button group - examples & tutorial. basic & advanced usage","description":"bootstrap button groups are buttons grouped together in a single line with no space between them. they can be grouped both vertically and horizontally.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=46390","wptitle":"Button Group"},"46641":{"title":"bootstrap edge header - introduction and code example","description":"bootstrap edge header is a full-width block located on the top of a page as a part of a background for a card. it is a unique material design component","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=46641","wptitle":"Edge Header"},"46643":{"title":"bootstrap streak - examples & tutorial. basic & advanced usage","description":"bootstrap streak is a horizontal block containing text, uses to separate content sections or highlight some piece of information.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=46643","wptitle":"Streak"},"46649":{"title":"bootstrap navs - examples & tutorial. basic & advanced usage","description":"bootstrap navs is a class which can transform a list of items into navigation components or tabs\/pills. navs helps to build more advanced components.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=46649","wptitle":"Navs"},"47032":{"title":"bootstrap hamburger menu - examples & tutorial. basic & advanced usage","description":"bootstrap hamburger menu is a navigation with additional hamburger looks-like icon which activates hidden menu elements in navbar or sidenav.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=47032","wptitle":"Hamburger Menu"},"47063":{"title":"bootstrap pills - code examples, tutorial and use examples","description":"bootstrap pills are simple navigation components that expedite browsing through various options in the layout.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=47063","wptitle":"Pills"},"47065":{"title":"bootstrap equal height columns - examples, tutorial & advanced usage","description":"bootstrap equal height columns is a utility which helps to keep columns size the same, no matter how much content will be placed inside.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=47065","wptitle":"Equal Height Columns"},"47100":{"title":"bootstrap video - examples & tutorial. basic & advanced usage","description":"bootstrap video is a component which embeds a video file in dom. it can be used in carousels, modals, pages backgrounds or iframes.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=47100","wptitle":"Video"},"47182":{"title":"bootstrap timeline - examples & tutorial. basic & advanced usage","description":"bootstrap timeline is a component which can be used to display content in chronological order. listed items may contain not only text but also images.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=47182","wptitle":"Timeline"},"47250":{"title":"bootstrap icon button - examples & tutorial. basic & advanced usage","description":"bootstrap icon button is a combination of a standard bootstrap button with font awesome icon inside it. it may contain icon only or text with an icon.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=47250","wptitle":"Button Icon"},"47263":{"title":"bootstrap modal events - examples & tutorial. basic & advanced usage","description":"bootstrap modal events is a set of js scripts that let you launch bootstrap modals based on an action performed by a website visitors.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=47263","wptitle":"Modal Events"},"47290":{"title":"bootstrap gradients - examples & tutorial. basic & advanced usage","description":"bootstrap gradient is a linear color progression - a transition between two colors is fluent. gradient can be used in various of components.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=47290","wptitle":"Gradients"},"47350":{"title":"bootstrap card layout - examples, tutorial & advanced usage","description":"bootstrap card layout is a design based on standard bootstrap card combined in different forms and with different functionalities.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=47350","wptitle":"Card Layout"},"47479":{"title":"bootstrap media queries - examples & tutorial. basic & advanced usage","description":"bootstrap media queries are queries use for applying styles determined by the general type of the device, browsers characteristics or environment.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=47479","wptitle":"Media Queries"},"47493":{"title":"bootstrap notification - examples & tutorial. basic & advanced usage","description":"bootstrap notification is a set of components which displays a static information or one generated in response to particular user on-site behavior.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=47493","wptitle":"Notification"},"47532":{"title":"bootstrap responsive email templates - code, examples, tutorials","description":"bootstrap email templates is a set of pre-made, ready-to-use combination of buttons, images, and text designed to be sent via an email.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=47532","wptitle":"Responsive email templates"},"47639":{"title":"bootstrap text color - examples & tutorial. basic & advanced usage","description":"bootstrap text color is a set of colors which can be used to change the font's color. color may be also changed when hovering a mouse over a text area.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=47639","wptitle":"Text Color"},"47668":{"title":"bootstrap chat - examples & tutorial. basic & advanced usage","description":"bootstrap chat is a component dedicated for text-based communication between two or more users in real time. build with conversations list sidebar.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=47668","wptitle":"Chat"},"47789":{"title":"bootstrap background image - examples, tutorial & advanced usage","description":"bootstrap background image is an illustration chosen by a user placed behind all other objects on the website. it may be full or partially visible.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=47789","wptitle":"Background Image"},"48278":{"title":"bootstrap autocomplete - examples & tutorial. basic & advanced usage","description":"bootstrap autocomplete is a component which predicts the words basing on the first few letters given by a user, while one is typing it.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=48278","wptitle":"Autocomplete"},"51243":{"title":"bootstrap 4 stable released! read summary and tutorial","description":"2,5 years of development. 6,000 commits, 650+ files changed, 67,000 lines added, and 82,000 lines deleted. bootstrap 4 stable is finally here!","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=51243","wptitle":"Bootstrap 4 stable"},"52102":{"title":"bootstrap modal styles - examples & tutorial. basic & advanced usage","description":"by using our predefined modal styles you can add some emotional weight to your information, ranging from a simple warning to critical system failure or from an operation success to a neutral information.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=52102","wptitle":"Modal styles"},"52104":{"title":"bootstrap modal examples & templates","description":"multiple examples and advanced usage. modal cookies, coupon, discount, abandoned card, related content, poll, cart, youtube, product and many more.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=52104","wptitle":"Modal examples &amp; templates"},"52467":{"title":"bootstrap table responsive - examples & tutorial. basic & advanced usage","description":"responsive tables allow tables to be scrolled horizontally with ease. that means they can be comfortably used both on desktops and mobile devices.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=52467","wptitle":"Table responsive"},"52470":{"title":"bootstrap table sort - examples & tutorial. basic & advanced usage","description":"bootstrap table sort functionality lets you sort the data of the tables according to any specific columns. it's easy to implement and use.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=52470","wptitle":"Table sort"},"52474":{"title":"bootstrap table search - examples & tutorial. basic & advanced usage","description":"bootstrap table search - super fast and easy to use searching functionality dedicated to bootstrap tables.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=52474","wptitle":"Table search"},"52477":{"title":"bootstrap table scroll - examples & tutorial. basic & advanced usage","description":"bootstrap table scroll functionality works vertically (y axis) and horizontally (x axis). you can use it as an alternative for the pagination.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=52477","wptitle":"Table scroll"},"52479":{"title":"bootstrap table pagination - examples & tutorial. basic & advanced usage","description":"table pagination is a simple navigation which lets you split a huge amount of content within the tables into smaller parts.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=52479","wptitle":"Table pagination"},"52484":{"title":"bootstrap table editable - examples & tutorial. basic & advanced usage","description":"with editable bootstrap table, you can add and remove rows and change text and information within cells.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=52484","wptitle":"Table editable"},"52505":{"title":"md bootstap cdn","description":"use bootstrapcdn to load css, javascript and font awesome icons with system of distributed servers. faster load times for web and mobile users.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=52505","wptitle":"MD Bootstrap CDN"},"53995":{"title":"admin dashboard free template - bootstrap 4 & material design","description":"free, responsive admin dashboard template containing different styles of dashboards, data presentations, and numerous insightful components. built with the newest bootstrap 4 and material design. mit license - free for personal and commercial use.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=53995","wptitle":"Admin Dashboard Template - Bootstrap 4 &amp; Material Design"},"53997":{"title":"blog free template - bootstrap 4 & material design","description":"free, responsive blog template containing many types of engaging posts, author pages, and category pages. designed for storytellers. built with the newest bootstrap 4 and material design. mit license - free for personal and commercial use.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=53997","wptitle":"Blog Template - Bootstrap 4 &amp; Material Design"},"53999":{"title":"coming soon free template - bootstrap 4 & material design","description":"free, responsive coming soon template containing animated, full-page intro and time counter.\u00a0 built with the newest bootstrap 4 and material design. mit license - free for personal and commercial use.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=53999","wptitle":"Coming Soon Template - Bootstrap 4 &amp; Material Design"},"54001":{"title":"ecommerce free template - bootstrap 4 & material design","description":"free, responsive ecommerce template containing many types of product pages, shopping carts, and different homepages with product presentations. designed for business. built with the newest bootstrap 4 and material design. mit license - free for personal and commercial use.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=54001","wptitle":"Ecommerce Template - Bootstrap 4 &amp; Material Design"},"54003":{"title":"landing page free template - bootstrap 4 & material design","description":"free, responsive landing page template containing stunning, full or half-page intro, call to action buttons, forms, and many other crucial components. built with the newest bootstrap 4 and material design. mit license - free for personal and commercial use.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=54003","wptitle":"Landing Page Template - Bootstrap 4 &amp; Material Design"},"54005":{"title":"magazine free template - bootstrap 4 & material design","description":"free, responsive magazine template containing many types of magazine newsfeeds and components designed for presentation huge amount of news. built with the newest bootstrap 4 and material design. mit license - free for personal and commercial use.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=54005","wptitle":"Magazine Template - Bootstrap 4 &amp; Material Design"},"54007":{"title":"portfolio free template - bootstrap 4 & material design","description":"free, responsive portfolio template containing stunning, full-page intro and different types of galleries. built with the newest bootstrap 4 and material design. mit license - free for personal and commercial use.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=54007","wptitle":"Portfolio Template - Bootstrap 4 &amp; Material Design"},"54009":{"title":"saas free template - bootstrap 4 & material design","description":"free, responsive saas template containing pages and components designed for companies owning a \"software as a service\" product. built with the newest bootstrap 4 and material design. mit license - free for personal and commercial use.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=54009","wptitle":"Saas Template - Bootstrap 4 &amp; Material Design"},"57424":{"description":"bootstrap variables are the storage locations paired with the associated symbolic names, which contain some known quantity of information referred to as the values.","title":"bootstrap variables","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=57424","wptitle":"Variables"},"59922":{"title":"bootstrap form validation - examples & tutorial. basic & advanced usage","description":"provide valuable, actionable feedback to your users with html5 form validation \u2013 available in all our supported browsers. choose from the browser default validation feedback, or implement custom messages with our built-in classes and starter javascript.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=59922","wptitle":"Form validation"},"60545":{"title":"bootstrap table - styles & examples. basic & advanced usage","description":"extended bootstrap tables with additional elements like buttons, checkboxes, icons, panels & more.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=60545","wptitle":"Table styles & examples"},"60547":{"title":"bootstrap 4 datatables - examples & tutorial. basic & advanced usage","description":"bootstrap 4 integration with the most popular plugin enhancing the possibilities of standard tables. available in material design or default bootstrap style.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=60547","wptitle":"Bootstrap 4 datatables1"},"60558":{"description":"bootstrap button generator - a simple and fast way to create a bootstrap 4 buttons with custom text, colors, sizes, and icons.","title":"bootstrap button generator - free, online editor for bootstrap 4 buttons","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=60558","wptitle":"Button generator"},"60560":{"title":"bootstrap modal generator - free, online editor for bootstrap 4 modals","description":"bootstrap modal generator - a simple and fast way to create a bootstrap 4 modals with custom styles, sizes, animations and positions.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=60560","wptitle":"Modal generator"},"60800":{"title":"fluent design for bootstrap 4 - ui kit inspired by microsoft design system","description":"fluent design for bootstrap 4 - 100+ fluent ui elements, 1400+ fluent icons, css animations, scss files and many more. free for personal and commercial use.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=60800","wptitle":"Fluent Design UI KIT"},"61196":{"description":"learn how to easily customize bootstrap forms. use the following examples to adjust the forms to your needs and change their appearance.","title":"bootstrap forms styles & customization","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=61196","wptitle":"Forms styles & customization"},"61270":{"title":"bootstrap navbar generator - free, online editor for bootstrap 4 navbars","description":"bootstrap navbar generator - a simple and fast way to create a bootstrap 4 navbar with custom styles, sizes and positions.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=61270","wptitle":"Navbar generator"},"61273":{"title":"bootstrap flexbox generator - free, online editor for bootstrap 4 flexbox","description":"bootstrap flexbox generator - a simple and fast way to test a bootstrap 4 flexbox.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=61273","wptitle":"Flexbox generator"},"75863":{"description":"cards dedicated to great range of data including weather info, promotions, retaurant and hotel bookings or even analytic metrics displayed in charts.","title":"bootstrap extended cards - examples & tutorial. basic & advanced usage","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=75863","wptitle":"Extended Cards"},"76471":{"description":"multiple plugins and addons which enhance your bootstrap project. quick install, easy to use & customize. huge community and fast support.","title":"md bootstrap plugins & addons - best extensions for the web projects","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=76471","wptitle":"MD Bootstrap plugins & addons"},"79412":{"title":"bootstrap color combinations. basic & advanced usage","description":"the material design color system can be used to create a color theme that reflects your brand or style.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=79412","wptitle":"Color combinations"},"80243":{"description":"bootstrap form builder - a simple and fast way to create a fully coded and styled bootstrap 4 tables. available default and material design versions.","title":"bootstrap form builder - free, online drag and drop css form creator","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=80243","wptitle":"Form builder and generator - drag and drop"},"80392":{"title":"bootstrap sortable plugin - examples & tutorial. basic & advanced usage","description":"bootstrap sortable plugin is an extension that allows you to move, reorder, sort and organize elements on your website by using drag and drop functionality.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=80392","wptitle":"Sortable plugin"},"80397":{"title":"bootstrap drag and drop \/ draggable plugin - examples & tutorial. basic & advanced usage","description":"md bootstrap draggable plugin is an extension that allows you to move objects by clicking on them and dragging anywhere within the viewport.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=80397","wptitle":"Drag and drop \/ draggable plugin"},"80402":{"title":"bootstrap drag and drop file upload - examples & tutorial. basic & advanced usage","description":"md bootstrap file upload plugin is an extension that allows you to upload files by using drag and drop functionality. easy to use, setup and customize.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=80402","wptitle":"Drag and drop file upload"},"80412":{"title":"bootstrap table editable plugin - examples & tutorial. basic & advanced usage","description":"table editor is an extension that allows you to create customized, fully editable tables. easy to use, setup and customize.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=80412","wptitle":"Table editable"},"80698":{"title":"%%title%% - examples & tutorial. basic & advanced usage","description":"%%excerpt%% bootstrap preloaders (also known as loaders) are simple animations that are used to keep visitors entertained while the page is still loading, which helps to increase the user experience.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=80698","wptitle":"Loader \/ Spinner"},"81208":{"title":"bootstrap material design ui kit - world's most popular & free ui framework","description":"material design for bootstrap - trusted by over 1,000000 developers and designers. easy to use & customize. 500+ material ui elements, templates & tutorials.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=81208","wptitle":"Material Design for Bootstrap 4"},"81542":{"description":"bring bootstrap to life with our optional javascript plugins built on jquery. learn about each plugin, our data and programmatic api options, and more.","title":"bootstrap javascript usage","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=81542","wptitle":"JavaScript usage"},"81919":{"title":"bootstrap filter plugin - examples & tutorial. basic & advanced usage","description":"md bootstrap filter is an extension perfect for introducing vistors to a number of images, which can be freely filtered depending on the category.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=81919","wptitle":"Filter"},"81924":{"title":"bootstrap carousel 3d","description":"md bootstrap carousel 3d plugin is a three dimensional slideshow component perfect for cycling through elements, especially images.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=81924","wptitle":"Carousel 3D"},"81961":{"description":"bootstrap full screen scroller plugin creates amazing one-page vertically and horizontally scrolling application with mouse and keyboard steering.","title":"bootstrap full screen scroller - examples & tutorial","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=81961","wptitle":"Full Screen Scroller"},"82011":{"title":"bootstrap vector map - examples & tutorial. basic & advanced usage","description":"md bootstrap vector map plugin helps you to show beautiful, scalable maps of the world, continents and countries. easy to use, setup and customize. no api key needed - no hussle.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=82011","wptitle":"Vector map"},"82040":{"description":"bootstrap full calendar plugin is an extension that allows you to create calendar functionality.","title":"bootstrap full calendar - examples & tutorial. basic & advanced usage","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=82040","wptitle":"JQuery - Full Calendar"},"82043":{"description":"bootstrap color picker plugin allows you to select different colors. you can successfully use it in various product wizards, clothing sales, or other situations where you need to be able to choose a color.","title":"bootstrap color picker - examples & tutorial. basic & advanced usage","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=82043","wptitle":"JQuery - Color Picker"},"82051":{"description":"bootstrap wysiwyg editor is a lightweight plugin that enables rich text editing on your website - text formatting, color manipulation, inserting links and images.","title":"bootstrap wysiwyg editor - examples & tutorial. basic & advanced usage","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=82051","wptitle":"WYSIWYG Editor"},"83978":{"description":"you can center any element (text, images, div, buttons) horizontally by using center utilities or flexbox. see examples.","title":"bootstrap center (horizontal align)","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=83978","wptitle":"Center (horizontal align)"},"84316":{"title":"bootstrap overflow - examples & tutorial. basic & advanced usage","description":"bootstrap overflow are lines placed on the edges of buttons, images, and other web elements. additionally, border-radius class rounds the elements corners.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=84316","wptitle":"Overflow"},"84708":{"title":"bootstrap masonry - examples & tutorial. basic & advanced usage","description":"bootstrap masonry is a grid layout based on columns","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=84708","wptitle":"Masonry"},"85430":{"title":"bootstrap responsive font size guideline - examples, tutorial & advanced usage","description":"%%excerpt%% %%excerpt%% bootstrap rfs is a font size engine which automatically calculates the appropriate font size based on the dimensions of the browser viewport.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=85430","wptitle":"Responsive Font Size"},"85926":{"title":"bootstrap treeview - examples & tutorial. basic & advanced usage","description":"bootstrap treeview represents a hierarchical view of information, where each item can have a number of subitems.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=85926","wptitle":"Treeview"},"86285":{"title":"bootstrap star rating plugin","description":"bootstrap star rating plugin can be used to allow the users to share their opinion about the product, documentation page, photo and more.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=86285","wptitle":"Star rating"},"87362":{"title":"bootstrap flags - examples & tutorial. basic & advanced usage","description":"bootstrap flag is used to represent a political state.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=87362","wptitle":"Flags"},"89567":{"description":"%%excerpt%% learning jquery with our tutorial is super-easy. multiple examples and online editor will help you to understand every aspect of jquery in the shortest possible way.","title":"","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=89567","wptitle":"JQuery Tutorial \u2013 easy & free jQuery course for beginners"},"90129":{"title":"bootstrap simple charts - examples & tutorial. basic & advanced usage","description":"lightweight plugin to render simple, animated and retina optimized pie charts with customization option.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=90129","wptitle":"Simple Charts"},"90566":{"title":"bootstrap tags and chips - examples, tutorial & advanced usage","description":"bootstrap tags and chips categorize content with the use of text and icons. tags & chips make it easier to browse throughout articles, comments or pages.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=90566","wptitle":"Tags and Chips"},"102429":{"title":"material design for bootstrap installation guide","description":"download zip package to get the compiled css and javascript, source code or install mdbootstrap using npm. you can also use cdn for quick start.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=102429","wptitle":"Installation Guide"},"107503":{"title":"md bootstrap jquery visual studio code snippets","description":"add visual studio code snippets for mdb jquery bootstrap ui kit to your code editor and boost your coding productivity. start using vscode shortcuts","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=107503","wptitle":"MDB jQuery Visual Studio Snippets"},"111190":{"title":"styles customization - material design for bootstrap","description":"set of rules applied to the css selectors that allow to determine which style is applied to an element. add custom css styles to overwrite mdb styles.","link":"https:\/\/mdbootstrap.com\/\/en\/?page_id=111190","wptitle":"Styles customization"}}};
+/* ]]> */
+</script>
+<script type="text/javascript">
+/* <![CDATA[ */
+var shareCountsData = {"oldShareCounts":""};
+/* ]]> */
+</script>
+<script type="text/javascript"
+	src="https://mdbootstrap.com/wp-admin/load-scripts.php?c=gzip&amp;load%5Bchunk_0%5D=jquery-core,jquery-migrate&amp;ver=5.4.2"></script>
+<script type="text/javascript"
+	src="https://z9t4u9f6.stackpathcdn.com/wp-content/plugins/bitpay-checkout-for-woocommerce/js/bitpayquickpay_js.js?ver=5.4.2"></script>
+<script type="text/javascript"
+	src="https://z9t4u9f6.stackpathcdn.com/wp-content/plugins/duracelltomi-google-tag-manager/js/gtm4wp-woocommerce-classic.js?ver=1.11.4"></script>
+<script type="text/javascript"
+	src="https://z9t4u9f6.stackpathcdn.com/wp-content/plugins/duracelltomi-google-tag-manager/js/gtm4wp-woocommerce-enhanced.js?ver=1.11.4"></script>
+<script type="text/javascript"
+	src="https://z9t4u9f6.stackpathcdn.com/wp-content/themes/mdbootstrap4/js/mdb-search.js?ver=4.19.0-update.1"></script>
+<script type="text/javascript"
+	src="https://z9t4u9f6.stackpathcdn.com/wp-content/themes/mdbootstrap4/js/tutorial-share-counts.js?ver=4.19.0-update.4"></script>
+<link rel="https://api.w.org/" href="https://mdbootstrap.com/wp-json/">
+<link rel="EditURI" type="application/rsd+xml" title="RSD"
+	href="https://mdbootstrap.com/xmlrpc.php?rsd">
+<link rel="wlwmanifest" type="application/wlwmanifest+xml"
+	href="https://z9t4u9f6.stackpathcdn.com/wp-includes/wlwmanifest.xml">
+<meta name="generator" content="WordPress 5.4.2">
+<meta name="generator" content="WooCommerce 4.2.0">
+<link rel="shortlink" href="https://mdbootstrap.com/?p=80402">
+<link rel="alternate" type="application/json+oembed"
+	href="https://mdbootstrap.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmdbootstrap.com%2Fplugins%2Fjquery%2Ffile-
+%2F">
+<link rel="alternate" type="text/xml+oembed"
+	href="https://mdbootstrap.com/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fmdbootstrap.com%2Fplugins%2Fjquery%2Ffile-upload%2F&amp;format=xml">
+
+<!-- Google Tag Manager for WordPress by gtm4wp.com -->
+<script data-cfasync="false" data-pagespeed-no-defer="">//<![CDATA[
+	var dataLayer_content = {"customerTotalOrders":0,"customerTotalOrderValue":"0.00","customerFirstName":"","customerLastName":"","customerBillingFirstName":"","customerBillingLastName":"","customerBillingCompany":"","customerBillingAddress1":"","customerBillingAddress2":"","customerBillingCity":"","customerBillingPostcode":"","customerBillingCountry":"","customerBillingEmail":"","customerBillingPhone":"","customerShippingFirstName":"","customerShippingLastName":"","customerShippingCompany":"","customerShippingAddress1":"","customerShippingAddress2":"","customerShippingCity":"","customerShippingPostcode":"","customerShippingCountry":""};
+	dataLayer.push( dataLayer_content );//]]>
+</script>
+<script data-cfasync="false">//<![CDATA[
+(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.'+'js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-W7MBMN');//]]>
+</script>
+<!-- End Google Tag Manager -->
+<!-- End Google Tag Manager for WordPress by gtm4wp.com -->
+<noscript>
+	<style>
+.woocommerce-product-gallery {
+	opacity: 1 !important;
+}
+</style>
+</noscript>
+<style type="text/css">
+.recentcomments a {
+	display: inline !important;
+	padding: 0 !important;
+	margin: 0 !important;
+}
+</style>
+<link rel="icon"
+	href="https://z9t4u9f6.stackpathcdn.com/wp-content/uploads/2016/11/cropped-ms-icon-310x310-32x32.png"
+	sizes="32x32">
+<link rel="icon"
+	href="https://z9t4u9f6.stackpathcdn.com/wp-content/uploads/2016/11/cropped-ms-icon-310x310-192x192.png"
+	sizes="192x192">
+<link rel="apple-touch-icon"
+	href="https://z9t4u9f6.stackpathcdn.com/wp-content/uploads/2016/11/cropped-ms-icon-310x310-180x180.png">
+<meta name="msapplication-TileImage"
+	content="https://z9t4u9f6.stackpathcdn.com/wp-content/uploads/2016/11/cropped-ms-icon-310x310-270x270.png">
+<script> var currency = '€'; </script>
+<meta name="p:domain_verify" content="ba4bb1f26dcf05eadc4ea92722eca381">
+
+
+<!-- Ahref verification -->
+<meta name="ahrefs-site-verification"
+	content="cd945a30a32beb9f20f22626c5f801f2063a726c6fd9af1db55ce27eafaa1e45">
+
+<style id="css-ddslick" type="text/css">
+.dd-select {
+	border-radius: 2px;
+	border: solid 1px #ccc;
+	position: relative;
+	cursor: pointer;
+}
+
+.dd-desc {
+	color: #aaa;
+	display: block;
+	overflow: hidden;
+	font-weight: normal;
+	line-height: 1.4em;
+}
+
+.dd-selected {
+	overflow: hidden;
+	display: block;
+	padding: 10px;
+	font-weight: bold;
+}
+
+.dd-pointer {
+	width: 0;
+	height: 0;
+	position: absolute;
+	right: 10px;
+	top: 50%;
+	margin-top: -3px;
+}
+
+.dd-pointer-down {
+	border: solid 5px transparent;
+	border-top: solid 5px #000;
+}
+
+.dd-pointer-up {
+	border: solid 5px transparent !important;
+	border-bottom: solid 5px #000 !important;
+	margin-top: -8px;
+}
+
+.dd-options {
+	border: solid 1px #ccc;
+	border-top: none;
+	list-style: none;
+	box-shadow: 0px 1px 5px #ddd;
+	display: none;
+	position: absolute;
+	z-index: 2000;
+	margin: 0;
+	padding: 0;
+	background: #fff;
+	overflow: auto;
+}
+
+.dd-option {
+	padding: 10px;
+	display: block;
+	border-bottom: solid 1px #ddd;
+	overflow: hidden;
+	text-decoration: none;
+	color: #333;
+	cursor: pointer;
+	-webkit-transition: all 0.25s ease-in-out;
+	-moz-transition: all 0.25s ease-in-out;
+	-o-transition: all 0.25s ease-in-out;
+	-ms-transition: all 0.25s ease-in-out;
+}
+
+.dd-options>li:last-child>.dd-option {
+	border-bottom: none;
+}
+
+.dd-option:hover {
+	background: #f3f3f3;
+	color: #000;
+}
+
+.dd-selected-description-truncated {
+	text-overflow: ellipsis;
+	white-space: nowrap;
+}
+
+.dd-option-selected {
+	background: #f6f6f6;
+}
+
+.dd-option-image, .dd-selected-image {
+	vertical-align: middle;
+	float: left;
+	margin-right: 5px;
+	max-width: 64px;
+}
+
+.dd-image-right {
+	float: right;
+	margin-right: 15px;
+	margin-left: 5px;
+}
+
+.dd-container {
+	position: relative;
+}
+
+&
+#8203 ; .dd-selected-text {
+	font-weight: bold
+}
+&
+#8203
+
+
+;
+</style>
+<script
+	src="https://googleads.g.doubleclick.net/pagead/viewthroughconversion/979879318/?random=1592303470963&amp;cv=9&amp;fst=1592303470963&amp;num=1&amp;label=uIBJCPv423AQlouf0wM&amp;guid=ON&amp;resp=GooglemKTybQhCsO&amp;u_h=864&amp;u_w=1536&amp;u_ah=864&amp;u_aw=1536&amp;u_cd=24&amp;u_his=1&amp;u_tz=330&amp;u_java=false&amp;u_nplug=3&amp;u_nmime=4&amp;gtm=2wg640&amp;sendb=1&amp;ig=1&amp;frm=0&amp;url=https%3A%2F%2Fmdbootstrap.com%2Fplugins%2Fjquery%2Ffile-upload%2F&amp;ref=https%3A%2F%2Fmdbootstrap.com%2Fsupport%2Fjquery%2Ffile-upload-plugin-issue%2F&amp;tiba=Bootstrap%20drag%20and%20drop%20file%20upload%20-%20examples%20%26%20tutorial.%20Basic%20%26%20advanced%20usage%20-%20Material%20Design%20for%20Bootstrap&amp;hn=www.googleadservices.com&amp;async=1&amp;rfmt=3&amp;fmt=4"></script>
+</head>
+
+<body class="fixed-sn mdb-skin-custom" data-spy="scroll"
+	data-target="#scrollspy" data-offset="15" aria-busy="true">
+
+
+
+	<!--Section: Docs content-->
+	<section class="documentation">
+		<style>
+.file-upload {
+	display: -webkit-box;
+	display: -webkit-flex;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-pack: center;
+	-webkit-justify-content: center;
+	-ms-flex-pack: center;
+	justify-content: center;
+	-webkit-box-align: center;
+	-webkit-align-items: center;
+	-ms-flex-align: center;
+	align-items: center;
+	position: relative;
+	cursor: pointer;
+	overflow: hidden;
+	width: 100%;
+	max-width: 100%;
+	height: 200px;
+	padding: 5px 10px;
+	font-size: 1rem;
+	text-align: center;
+	color: #ccc
+}
+
+.file-upload-wrapper .card.card-body.has-error .file-upload-message .file-upload-error,
+	.file-upload-wrapper .card.card-body.has-preview .btn.btn-sm.btn-danger
+	{
+	display: block
+}
+
+.file-upload i {
+	font-size: 3rem
+}
+
+.file-upload .mask.rgba-stylish-slight {
+	opacity: 0;
+	-webkit-transition: all .15s linear;
+	-o-transition: all .15s linear;
+	transition: all .15s linear
+}
+
+.file-upload:hover .mask.rgba-stylish-slight {
+	opacity: .8
+}
+
+.file-upload-wrapper .card.card-body.has-error {
+	border-color: #f34141
+}
+
+.file-upload-wrapper .card.card-body.has-error:hover .file-upload-errors-container
+	{
+	visibility: visible;
+	opacity: 1;
+	-webkit-transition-delay: 0s;
+	-o-transition-delay: 0s;
+	transition-delay: 0s
+}
+
+.file-upload-wrapper .card.card-body.disabled input {
+	cursor: not-allowed
+}
+
+.file-upload-wrapper .card.card-body.disabled:hover {
+	background-image: none;
+	-webkit-animation: none;
+	animation: none
+}
+
+.file-upload-wrapper .card.card-body.disabled .file-upload-message {
+	opacity: .5;
+	text-decoration: line-through
+}
+
+.file-upload-wrapper .card.card-body.disabled .file-upload-infos-message
+	{
+	display: none
+}
+
+.file-upload-wrapper .card.card-body input {
+	position: absolute;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	height: 100%;
+	width: 100%;
+	opacity: 0;
+	cursor: pointer;
+	z-index: 5
+}
+
+.file-upload-wrapper .card.card-body .file-upload-message {
+	position: relative;
+	top: 50px;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%)
+}
+
+.file-upload-wrapper .card.card-body .file-upload-message span.file-icon
+	{
+	font-size: 50px;
+	color: #ccc
+}
+
+.file-upload-wrapper .card.card-body .file-upload-message p {
+	margin: 5px 0 0
+}
+
+.file-upload-wrapper .card.card-body .file-upload-message p.file-upload-error
+	{
+	color: #f34141;
+	font-weight: 700;
+	display: none
+}
+
+.file-upload-wrapper .card.card-body .btn.btn-sm.btn-danger {
+	display: none;
+	position: absolute;
+	opacity: 0;
+	z-index: 7;
+	top: 10px;
+	right: 10px;
+	-webkit-transition: all .15s linear;
+	-o-transition: all .15s linear;
+	transition: all .15s linear
+}
+
+.file-upload-wrapper .card.card-body .file-upload-preview {
+	display: none;
+	position: absolute;
+	z-index: 1;
+	background-color: #fff;
+	padding: 5px;
+	width: 100%;
+	height: 100%;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	left: 0;
+	overflow: hidden;
+	text-align: center
+}
+
+.file-upload-wrapper .card.card-body .file-upload-preview .file-upload-render .file-upload-preview-img
+	{
+	width: 100%;
+	height: 100%;
+	background-color: #fff;
+	-webkit-transition: border-color .15s linear;
+	-o-transition: border-color .15s linear;
+	transition: border-color .15s linear;
+	-o-object-fit: cover;
+	object-fit: cover
+}
+
+.file-upload-wrapper .card.card-body .file-upload-preview .file-upload-render i
+	{
+	font-size: 80px;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	position: absolute;
+	color: #777
+}
+
+.file-upload-wrapper .card.card-body .file-upload-preview .file-upload-render .file-upload-extension
+	{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	-ms-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	margin-top: 10px;
+	text-transform: uppercase;
+	font-weight: 900;
+	letter-spacing: -.03em;
+	font-size: 1rem;
+	color: #fff;
+	width: 42px;
+	white-space: nowrap;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis
+}
+
+.file-upload-wrapper .card.card-body .file-upload-preview .file-upload-infos
+	{
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 3;
+	background: rgba(0, 0, 0, .7);
+	opacity: 0;
+	-webkit-transition: opacity .15s linear;
+	-o-transition: opacity .15s linear;
+	transition: opacity .15s linear
+}
+
+.file-upload-wrapper .card.card-body .file-upload-preview .file-upload-infos .file-upload-infos-inner
+	{
+	position: absolute;
+	top: 50%;
+	-webkit-transform: translate(0, -40%);
+	-ms-transform: translate(0, -40%);
+	transform: translate(0, -40%);
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	width: 100%;
+	padding: 0 20px;
+	-webkit-transition: all .2s ease;
+	-o-transition: all .2s ease;
+	transition: all .2s ease
+}
+
+.file-upload-wrapper .card.card-body .file-upload-preview .file-upload-infos .file-upload-infos-inner p
+	{
+	padding: 0;
+	margin: 0;
+	position: relative;
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	color: #fff;
+	text-align: center;
+	line-height: 25px;
+	font-weight: 700
+}
+
+.file-upload-wrapper .card.card-body .file-upload-preview .file-upload-infos .file-upload-infos-inner p.file-upload-infos-message
+	{
+	margin-top: 15px;
+	padding-top: 15px;
+	font-size: 12px;
+	position: relative;
+	opacity: .5
+}
+
+.file-upload-wrapper .card.card-body .file-upload-preview .file-upload-infos .file-upload-infos-inner p.file-upload-infos-message::before
+	{
+	content: "";
+	position: absolute;
+	top: 0;
+	left: 50%;
+	-webkit-transform: translate(-50%, 0);
+	-ms-transform: translate(-50%, 0);
+	transform: translate(-50%, 0);
+	background: #fff;
+	width: 30px;
+	height: 2px
+}
+
+.file-upload-wrapper .card.card-body:hover .btn.btn-sm.btn-danger,
+	.file-upload-wrapper .card.card-body:hover .file-upload-preview .file-upload-infos
+	{
+	opacity: 1
+}
+
+.file-upload-wrapper .card.card-body:hover .file-upload-preview .file-upload-infos .file-upload-infos-inner
+	{
+	margin-top: -5px
+}
+
+.file-upload-wrapper .card.card-body.touch-fallback {
+	height: auto !important
+}
+
+.file-upload-wrapper .card.card-body.touch-fallback:hover {
+	background-image: none;
+	-webkit-animation: none;
+	animation: none
+}
+
+.file-upload-wrapper .card.card-body.touch-fallback .file-upload-preview
+	{
+	position: relative;
+	padding: 0
+}
+
+.file-upload-wrapper .card.card-body.touch-fallback .file-upload-preview .file-upload-render
+	{
+	display: block;
+	position: relative
+}
+
+.file-upload-wrapper .card.card-body.touch-fallback .file-upload-preview .file-upload-infos .file-upload-infos-inner p.file-upload-infos-message::before,
+	.file-upload-wrapper .card.card-body.touch-fallback.has-preview .file-upload-message
+	{
+	display: none
+}
+
+.file-upload-wrapper .card.card-body.touch-fallback .file-upload-preview .file-upload-render .file-upload-font-file
+	{
+	position: relative;
+	-webkit-transform: translate(0, 0);
+	-ms-transform: translate(0, 0);
+	transform: translate(0, 0);
+	top: 0;
+	left: 0
+}
+
+.file-upload-wrapper .card.card-body.touch-fallback .file-upload-preview .file-upload-render .file-upload-font-file::before
+	{
+	margin-top: 30px;
+	margin-bottom: 30px
+}
+
+.file-upload-wrapper .card.card-body.touch-fallback .file-upload-preview .file-upload-render img
+	{
+	position: relative;
+	-webkit-transform: translate(0, 0);
+	-ms-transform: translate(0, 0);
+	transform: translate(0, 0)
+}
+
+.file-upload-wrapper .card.card-body.touch-fallback .file-upload-preview .file-upload-infos
+	{
+	position: relative;
+	opacity: 1;
+	background: 0 0
+}
+
+.file-upload-wrapper .card.card-body.touch-fallback .file-upload-preview .file-upload-infos .file-upload-infos-inner
+	{
+	position: relative;
+	top: 0;
+	-webkit-transform: translate(0, 0);
+	-ms-transform: translate(0, 0);
+	transform: translate(0, 0);
+	padding: 5px 90px 5px 0
+}
+
+.file-upload-wrapper .card.card-body.touch-fallback .file-upload-preview .file-upload-infos .file-upload-infos-inner p
+	{
+	padding: 0;
+	margin: 0;
+	position: relative;
+	width: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	-o-text-overflow: ellipsis;
+	text-overflow: ellipsis;
+	color: #777;
+	text-align: left;
+	line-height: 25px
+}
+
+.file-upload-wrapper .card.card-body.touch-fallback .file-upload-preview .file-upload-infos .file-upload-infos-inner p.file-upload-infos-message
+	{
+	margin-top: 0;
+	padding-top: 0;
+	font-size: 18px;
+	position: relative;
+	opacity: 1
+}
+
+.file-upload-wrapper .card.card-body.touch-fallback .file-upload-message
+	{
+	-webkit-transform: translate(0, 0);
+	-ms-transform: translate(0, 0);
+	transform: translate(0, 0);
+	padding: 40px 0
+}
+
+.file-upload-wrapper .card.card-body.touch-fallback .btn.btn-sm.btn-danger
+	{
+	top: auto;
+	bottom: 23px;
+	opacity: 1
+}
+
+.file-upload-wrapper .card.card-body.touch-fallback:hover .file-upload-preview .file-upload-infos .file-upload-infos-inner
+	{
+	margin-top: 5rem
+}
+
+.file-upload-wrapper .card.card-body .file-upload-loader {
+	position: absolute;
+	top: 15px;
+	right: 15px;
+	display: none;
+	z-index: 9
+}
+
+.file-upload-wrapper .card.card-body .file-upload-loader::after {
+	display: block;
+	position: relative;
+	width: 20px;
+	height: 20px;
+	-webkit-animation: rotate .6s linear infinite;
+	animation: rotate .6s linear infinite;
+	-webkit-border-radius: 100%;
+	border-radius: 100%;
+	border-top: 1px solid #ccc;
+	border-bottom: 1px solid #777;
+	border-left: 1px solid #ccc;
+	border-right: 1px solid #777;
+	content: ""
+}
+
+.file-upload-wrapper .card.card-body .file-upload-errors-container {
+	position: absolute;
+	left: 0;
+	top: 0;
+	right: 0;
+	bottom: 0;
+	z-index: 3;
+	background: rgba(243, 65, 65, .8);
+	text-align: left;
+	visibility: hidden;
+	opacity: 0;
+	-webkit-transition: visibility 0s linear .15s, opacity .15s linear;
+	-o-transition: visibility 0s linear .15s, opacity .15s linear;
+	transition: visibility 0s linear .15s, opacity .15s linear
+}
+
+.file-upload-wrapper .card.card-body .file-upload-errors-container ul {
+	padding: 10px 20px;
+	margin: 0;
+	position: absolute;
+	left: 0;
+	top: 50%;
+	-webkit-transform: translateY(-50%);
+	-ms-transform: translateY(-50%);
+	transform: translateY(-50%)
+}
+
+.file-upload-wrapper .card.card-body .file-upload-errors-container ul li
+	{
+	margin-left: 20px;
+	color: #fff;
+	font-weight: 700
+}
+
+.file-upload-wrapper .card.card-body .file-upload-errors-container.visible
+	{
+	visibility: visible;
+	opacity: 1;
+	-webkit-transition-delay: 0s;
+	-o-transition-delay: 0s;
+	transition-delay: 0s
+}
+
+.file-upload-wrapper .card.card-body ~.file-upload-errors-container ul {
+	padding: 0;
+	margin: 15px 0
+}
+
+.file-upload-wrapper .card.card-body ~.file-upload-errors-container ul li
+	{
+	margin-left: 20px;
+	color: #f34141;
+	font-weight: 700
+}
+
+@
+-webkit-keyframes rotate { 0% {
+	-webkit-transform: rotateZ(-360deg);
+	transform: rotateZ(-360deg)
+}
+
+100%
+{
+-webkit-transform
+
+
+:
+
+ 
+
+rotateZ
+
+
+(0);
+transform
+
+
+:
+
+ 
+
+rotateZ
+
+
+(0)
+}
+}
+@
+keyframes rotate { 0% {
+	-webkit-transform: rotateZ(-360deg);
+	transform: rotateZ(-360deg)
+}
+100%
+{
+-webkit-transform
+
+
+:
+
+ 
+
+rotateZ
+
+
+(0);
+transform
+
+
+:
+
+ 
+
+rotateZ
+
+
+(0)
+}
+}
+</style>
+		<!--Section: Intro-->
+		<section id="introduction">
+
+			<!--Title-->
+			<h2 class="primary-heading">Drag and drop file upload</h2>
+
+			<h1 class="secondary-heading mb-4">Bootstrap drag and drop file
+				upload plugin</h1>
+
+			<!--Description-->
+			<p>MD Bootstrap's File Upload plugin is an extension that allows
+				you to upload files by using drag and drop functionality. Easy to
+				use, setup and customize.</p>
+
+			<blockquote class="blockquote bq-primary">
+				<p class="bq-title">
+					To start working with the drag and drop file upload plugin see the
+					<strong>"Getting Started"</strong> tab on this page.
+				</p>
+			</blockquote>
+
+			<hr class="my-4">
+
+			<section class="mx-1" id="basic-example">
+
+				<!--Title-->
+				<h2 class="section-heading mb-4">Basic example</h2>
+
+				<blockquote class="blockquote bq-warning">
+					<p class="bq-title">
+						For each element with a file upload plugin, you have to add a
+						wrapper with the class
+						<code>file-upload-wrapper</code>
+						.
+					</p>
+
+				</blockquote>
+
+				<!--Live preview-->
+				<section>
+
+					<div class="file-upload-wrapper">
+						<div class="card card-body view file-upload">
+							<div class="card-text file-upload-message">
+								<i class="fas fa-cloud-upload-alt"></i>
+								<p>Drag and drop a file here or click</p>
+								<p class="file-upload-error">Ooops, something wrong
+									happended.</p>
+							</div>
+							<div class="mask rgba-stylish-slight"></div>
+							<div class="file-upload-errors-container">
+								<ul></ul>
+							</div>
+							<input type="file" id="input-file-now" class="file_upload">
+							<button type="button"
+								class="btn btn-sm btn-danger waves-effect waves-light">
+								Remove<i class="far fa-trash-alt ml-1"></i>
+							</button>
+							<div class="file-upload-preview">
+								<span class="file-upload-render"></span>
+								<div class="file-upload-infos">
+									<div class="file-upload-infos-inner">
+										<p class="file-upload-filename">
+											<span class="file-upload-filename-inner"></span>
+										</p>
+										<p class="file-upload-infos-message">Drag and drop or
+											click to replace</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--Code-->
+					<!-- mdbsnippet -->
+					<div class="docs-pills">
+						<div class="d-flex justify-content-between">
+							<ul class="nav md-pills pills-grey">
+								<li class="nav-item"><a class="nav-link active show"
+									data-toggle="tab" href="#mdb_88d95d43b37342f1d25789b0deed7149"
+									role="tab">HTML</a></li>
+								<li class="nav-item"><a class="nav-link " data-toggle="tab"
+									href="#mdb_930948a99411e204bd18d4c72ec33d95" role="tab">JS</a></li>
+							</ul>
+						</div>
+						<div class="tab-content">
+							<div class="tab-pane fade active show"
+								id="mdb_88d95d43b37342f1d25789b0deed7149" role="tabpanel">
+								<div class="code-toolbar">
+									<pre
+										class="grey lighten-3 px-3 mb-0 line-numbers  language-html"
+										data-editor="false">
+																	<code class=" language-html">
+																		<span class="token tag"><span class="token tag"><span
+													class="token punctuation">&lt;</span>div</span> <span
+												class="token attr-name">class</span><span
+												class="token attr-value"><span
+													class="token punctuation">=</span><span
+													class="token punctuation">"</span>file-upload-wrapper<span
+													class="token punctuation">"</span></span><span
+												class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span
+													class="token punctuation">&lt;</span>input</span> <span
+												class="token attr-name">type</span><span
+												class="token attr-value"><span
+													class="token punctuation">=</span><span
+													class="token punctuation">"</span>file<span
+													class="token punctuation">"</span></span> <span
+												class="token attr-name">id</span><span
+												class="token attr-value"><span
+													class="token punctuation">=</span><span
+													class="token punctuation">"</span>input-file-now<span
+													class="token punctuation">"</span></span> <span
+												class="token attr-name">class</span><span
+												class="token attr-value"><span
+													class="token punctuation">=</span><span
+													class="token punctuation">"</span>file-upload<span
+													class="token punctuation">"</span></span> <span
+												class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span
+													class="token punctuation">&lt;/</span>div</span><span
+												class="token punctuation">&gt;</span></span><span
+												aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span>
+																	</code>
+																</pre>
+									<div class="toolbar">
+										<div class="toolbar-item">
+											<button
+												class="btn-copy-code btn btn-outline-grey btn-sm px-2 waves-effect">
+												<i class="fa fa-copy mr-1"></i> Copy code
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade "
+								id="mdb_930948a99411e204bd18d4c72ec33d95" role="tabpanel">
+								<div class="code-toolbar">
+									<pre
+										class="grey lighten-3 px-3 mb-0 line-numbers  language-javascript"
+										data-editor="false">
+																	<code class=" language-javascript">
+																		<span class="token function">$</span><span
+												class="token punctuation">(</span><span class="token string">'.file-upload'</span><span
+												class="token punctuation">)</span><span
+												class="token punctuation">.</span><span
+												class="token function">file_upload</span><span
+												class="token punctuation">(</span><span
+												class="token punctuation">)</span><span
+												class="token punctuation">;</span><span aria-hidden="true"
+												class="line-numbers-rows"><span></span></span>
+																	</code>
+																</pre>
+									<div class="toolbar">
+										<div class="toolbar-item">
+											<button
+												class="btn-copy-code btn btn-outline-grey btn-sm px-2 waves-effect">
+												<i class="fa fa-copy mr-1"></i> Copy code
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /.mdbsnippet -->
+					<!--/Code-->
+
+				</section>
+				<!--/Section: Intro-->
+
+			</section>
+
+			<hr class="mt-4 mb-5">
+
+			<section class="mx-1" id="default-value">
+
+				<!--Title-->
+				<h2 class="section-heading mb-4">Default value</h2>
+
+				<p>You can add a default value to the plugin</p>
+
+				<!--Live preview-->
+
+				<section>
+
+					<div class="file-upload-wrapper">
+						<div class="card card-body view file-upload has-preview">
+							<div class="card-text file-upload-message">
+								<i class="fas fa-cloud-upload-alt"></i>
+								<p>Drag and drop a file here or click</p>
+								<p class="file-upload-error">Ooops, something wrong
+									happended.</p>
+							</div>
+							<div class="mask rgba-stylish-slight" style="display: none;"></div>
+							<div class="file-upload-errors-container">
+								<ul></ul>
+							</div>
+							<input type="file" id="input-file-now-custom-1"
+								class="file_upload"
+								data-default-file="https://mdbootstrap.com/img/Photos/Others/images/89.jpg">
+							<button type="button"
+								class="btn btn-sm btn-danger waves-effect waves-light">
+								Remove<i class="far fa-trash-alt ml-1"></i>
+							</button>
+							<div class="file-upload-preview" style="display: block;">
+								<span class="file-upload-render"><img
+									class="file-upload-preview-img"
+									src="https://mdbootstrap.com/img/Photos/Others/images/89.jpg"></span>
+								<div class="file-upload-infos">
+									<div class="file-upload-infos-inner">
+										<p class="file-upload-filename">
+											<span class="file-upload-filename-inner">89.jpg</span>
+										</p>
+										<p class="file-upload-infos-message">Drag and drop or
+											click to replace</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<!--Code-->
+					<!-- mdbsnippet -->
+					<div class="docs-pills">
+						<div class="d-flex justify-content-between">
+							<ul class="nav md-pills pills-grey">
+								<li class="nav-item"><a class="nav-link active show"
+									data-toggle="tab" href="#mdb_fb690fdff90ba9654df5fa8608ccc761"
+									role="tab">HTML</a></li>
+								<li class="nav-item"><a class="nav-link " data-toggle="tab"
+									href="#mdb_7e54e5a775f0770cd2c9c99691a4194f" role="tab">JS</a></li>
+							</ul>
+						</div>
+						<div class="tab-content">
+							<div class="tab-pane fade active show"
+								id="mdb_fb690fdff90ba9654df5fa8608ccc761" role="tabpanel">
+								<div class="code-toolbar">
+									<pre
+										class="grey lighten-3 px-3 mb-0 line-numbers  language-html"
+										data-editor="false">
+																	<code class=" language-html">
+																		<span class="token tag"><span class="token tag"><span
+													class="token punctuation">&lt;</span>div</span> <span
+												class="token attr-name">class</span><span
+												class="token attr-value"><span
+													class="token punctuation">=</span><span
+													class="token punctuation">"</span>file-upload-wrapper<span
+													class="token punctuation">"</span></span><span
+												class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span
+													class="token punctuation">&lt;</span>input</span> <span
+												class="token attr-name">type</span><span
+												class="token attr-value"><span
+													class="token punctuation">=</span><span
+													class="token punctuation">"</span>file<span
+													class="token punctuation">"</span></span> <span
+												class="token attr-name">id</span><span
+												class="token attr-value"><span
+													class="token punctuation">=</span><span
+													class="token punctuation">"</span>input-file-now-custom-1<span
+													class="token punctuation">"</span></span> <span
+												class="token attr-name">class</span><span
+												class="token attr-value"><span
+													class="token punctuation">=</span><span
+													class="token punctuation">"</span>file-upload<span
+													class="token punctuation">"</span></span> <span
+												class="token attr-name">data-default-file</span><span
+												class="token attr-value"><span
+													class="token punctuation">=</span><span
+													class="token punctuation">"</span>https://mdbootstrap.com/img/Photos/Others/images/89.jpg<span
+													class="token punctuation">"</span></span> <span
+												class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span
+													class="token punctuation">&lt;/</span>div</span><span
+												class="token punctuation">&gt;</span></span><span
+												aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span>
+																	</code>
+																</pre>
+									<div class="toolbar">
+										<div class="toolbar-item">
+											<button
+												class="btn-copy-code btn btn-outline-grey btn-sm px-2 waves-effect">
+												<i class="fa fa-copy mr-1"></i> Copy code
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade "
+								id="mdb_7e54e5a775f0770cd2c9c99691a4194f" role="tabpanel">
+								<div class="code-toolbar">
+									<pre
+										class="grey lighten-3 px-3 mb-0 line-numbers  language-javascript"
+										data-editor="false">
+																	<code class=" language-javascript">
+																		<span class="token function">$</span><span
+												class="token punctuation">(</span><span class="token string">'.file-upload'</span><span
+												class="token punctuation">)</span><span
+												class="token punctuation">.</span><span
+												class="token function">file_upload</span><span
+												class="token punctuation">(</span><span
+												class="token punctuation">)</span><span
+												class="token punctuation">;</span><span aria-hidden="true"
+												class="line-numbers-rows"><span></span></span>
+																	</code>
+																</pre>
+									<div class="toolbar">
+										<div class="toolbar-item">
+											<button
+												class="btn-copy-code btn btn-outline-grey btn-sm px-2 waves-effect">
+												<i class="fa fa-copy mr-1"></i> Copy code
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /.mdbsnippet -->
+					<!--/Code-->
+
+				</section>
+				<!--/Section: Intro-->
+
+			</section>
+
+			<hr class="mt-4 mb-5">
+
+			<section class="mx-1" id="height">
+
+				<!--Title-->
+				<h2 class="section-heading mb-4">Custom height</h2>
+
+				<p>You can set its height</p>
+
+				<!--Live preview-->
+				<section>
+					<div class="file-upload-wrapper">
+						<div class="card card-body view file-upload"
+							style="height: 510px;">
+							<div class="card-text file-upload-message">
+								<i class="fas fa-cloud-upload-alt"></i>
+								<p>Drag and drop a file here or click</p>
+								<p class="file-upload-error">Ooops, something wrong
+									happended.</p>
+							</div>
+							<div class="mask rgba-stylish-slight"></div>
+							<div class="file-upload-errors-container">
+								<ul></ul>
+							</div>
+							<input type="file" id="input-file-now-custom-2"
+								class="file_upload" data-height="500">
+							<button type="button"
+								class="btn btn-sm btn-danger waves-effect waves-light">
+								Remove<i class="far fa-trash-alt ml-1"></i>
+							</button>
+							<div class="file-upload-preview">
+								<span class="file-upload-render"></span>
+								<div class="file-upload-infos">
+									<div class="file-upload-infos-inner">
+										<p class="file-upload-filename">
+											<span class="file-upload-filename-inner"></span>
+										</p>
+										<p class="file-upload-infos-message">Drag and drop or
+											click to replace</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--Code-->
+					<!-- mdbsnippet -->
+					<div class="docs-pills">
+						<div class="d-flex justify-content-between">
+							<ul class="nav md-pills pills-grey">
+								<li class="nav-item"><a class="nav-link active show"
+									data-toggle="tab" href="#mdb_ecbc5fc78cf2c9752ac369b538491402"
+									role="tab">HTML</a></li>
+								<li class="nav-item"><a class="nav-link " data-toggle="tab"
+									href="#mdb_b1ce716f9da41fdbd00368452a9ba7ff" role="tab">JS</a></li>
+							</ul>
+						</div>
+						<div class="tab-content">
+							<div class="tab-pane fade active show"
+								id="mdb_ecbc5fc78cf2c9752ac369b538491402" role="tabpanel">
+								<div class="code-toolbar">
+									<pre
+										class="grey lighten-3 px-3 mb-0 line-numbers  language-html"
+										data-editor="false">
+																	<code class=" language-html">
+																		<span class="token tag"><span class="token tag"><span
+													class="token punctuation">&lt;</span>div</span> <span
+												class="token attr-name">class</span><span
+												class="token attr-value"><span
+													class="token punctuation">=</span><span
+													class="token punctuation">"</span>file-upload-wrapper<span
+													class="token punctuation">"</span></span><span
+												class="token punctuation">&gt;</span></span>
+   <span class="token tag"><span class="token tag"><span
+													class="token punctuation">&lt;</span>input</span> <span
+												class="token attr-name">type</span><span
+												class="token attr-value"><span
+													class="token punctuation">=</span><span
+													class="token punctuation">"</span>file<span
+													class="token punctuation">"</span></span> <span
+												class="token attr-name">id</span><span
+												class="token attr-value"><span
+													class="token punctuation">=</span><span
+													class="token punctuation">"</span>input-file-now-custom-2<span
+													class="token punctuation">"</span></span> <span
+												class="token attr-name">class</span><span
+												class="token attr-value"><span
+													class="token punctuation">=</span><span
+													class="token punctuation">"</span>file-upload<span
+													class="token punctuation">"</span></span>
+  <span class="token attr-name">data-height</span><span
+												class="token attr-value"><span
+													class="token punctuation">=</span><span
+													class="token punctuation">"</span>500<span
+													class="token punctuation">"</span></span> <span
+												class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span
+													class="token punctuation">&lt;/</span>div</span><span
+												class="token punctuation">&gt;</span></span><span
+												aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span><span></span></span>
+																	</code>
+																</pre>
+									<div class="toolbar">
+										<div class="toolbar-item">
+											<button
+												class="btn-copy-code btn btn-outline-grey btn-sm px-2 waves-effect">
+												<i class="fa fa-copy mr-1"></i> Copy code
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade "
+								id="mdb_b1ce716f9da41fdbd00368452a9ba7ff" role="tabpanel">
+								<div class="code-toolbar">
+									<pre
+										class="grey lighten-3 px-3 mb-0 line-numbers  language-javascript"
+										data-editor="false">
+																	<code class=" language-javascript">
+																		<span class="token function">$</span><span
+												class="token punctuation">(</span><span class="token string">'.file-upload'</span><span
+												class="token punctuation">)</span><span
+												class="token punctuation">.</span><span
+												class="token function">file_upload</span><span
+												class="token punctuation">(</span><span
+												class="token punctuation">)</span><span
+												class="token punctuation">;</span><span aria-hidden="true"
+												class="line-numbers-rows"><span></span></span>
+																	</code>
+																</pre>
+									<div class="toolbar">
+										<div class="toolbar-item">
+											<button
+												class="btn-copy-code btn btn-outline-grey btn-sm px-2 waves-effect">
+												<i class="fa fa-copy mr-1"></i> Copy code
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /.mdbsnippet -->
+					<!--/Code-->
+
+				</section>
+				<!--/Section: Intro-->
+
+			</section>
+
+			<hr class="mt-4 mb-5">
+
+			<section class="mx-1" id="disabled">
+
+				<!--Title-->
+				<h2 class="section-heading mb-4">Disable</h2>
+
+				<p>You can disable its input</p>
+
+				<!--Live preview-->
+				<section>
+					<div class="file-upload-wrapper">
+						<div class="card card-body view file-upload disabled">
+							<div class="card-text file-upload-message">
+								<i class="fas fa-cloud-upload-alt"></i>
+								<p>Drag and drop a file here or click</p>
+								<p class="file-upload-error">Ooops, something wrong
+									happended.</p>
+							</div>
+							<div class="mask rgba-stylish-slight"></div>
+							<div class="file-upload-errors-container">
+								<ul></ul>
+							</div>
+							<input type="file" id="input-file-now-disabled-2"
+								class="file_upload" disabled="disabled">
+							<div class="file-upload-preview">
+								<span class="file-upload-render"></span>
+								<div class="file-upload-infos">
+									<div class="file-upload-infos-inner">
+										<p class="file-upload-filename">
+											<span class="file-upload-filename-inner"></span>
+										</p>
+										<p class="file-upload-infos-message">Drag and drop or
+											click to replace</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--Code-->
+					<!-- mdbsnippet -->
+					<div class="docs-pills">
+						<div class="d-flex justify-content-between">
+							<ul class="nav md-pills pills-grey">
+								<li class="nav-item"><a class="nav-link active show"
+									data-toggle="tab" href="#mdb_11942736b3deff4ff3b1f5191531ebc9"
+									role="tab">HTML</a></li>
+								<li class="nav-item"><a class="nav-link " data-toggle="tab"
+									href="#mdb_d25dc05667c7e6539c8b00f2619aab32" role="tab">JS</a></li>
+							</ul>
+						</div>
+						<div class="tab-content">
+							<div class="tab-pane fade active show"
+								id="mdb_11942736b3deff4ff3b1f5191531ebc9" role="tabpanel">
+								<div class="code-toolbar">
+									<pre
+										class="grey lighten-3 px-3 mb-0 line-numbers  language-html"
+										data-editor="false">
+																	<code class=" language-html">
+																		<span class="token tag"><span class="token tag"><span
+													class="token punctuation">&lt;</span>div</span> <span
+												class="token attr-name">class</span><span
+												class="token attr-value"><span
+													class="token punctuation">=</span><span
+													class="token punctuation">"</span>file-upload-wrapper<span
+													class="token punctuation">"</span></span><span
+												class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span
+													class="token punctuation">&lt;</span>input</span> <span
+												class="token attr-name">type</span><span
+												class="token attr-value"><span
+													class="token punctuation">=</span><span
+													class="token punctuation">"</span>file<span
+													class="token punctuation">"</span></span> <span
+												class="token attr-name">id</span><span
+												class="token attr-value"><span
+													class="token punctuation">=</span><span
+													class="token punctuation">"</span>input-file-now-disabled-2<span
+													class="token punctuation">"</span></span> <span
+												class="token attr-name">class</span><span
+												class="token attr-value"><span
+													class="token punctuation">=</span><span
+													class="token punctuation">"</span>file-upload<span
+													class="token punctuation">"</span></span> <span
+												class="token attr-name">disabled</span><span
+												class="token attr-value"><span
+													class="token punctuation">=</span><span
+													class="token punctuation">"</span>disabled<span
+													class="token punctuation">"</span></span> <span
+												class="token attr-name">data-default-file</span><span
+												class="token attr-value"><span
+													class="token punctuation">=</span><span
+													class="token punctuation">"</span>https://mdbootstrap.com/img/Others/documentation/1.jpg<span
+													class="token punctuation">"</span></span> <span
+												class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span
+													class="token punctuation">&lt;/</span>div</span><span
+												class="token punctuation">&gt;</span></span><span
+												aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span>
+																	</code>
+																</pre>
+									<div class="toolbar">
+										<div class="toolbar-item">
+											<button
+												class="btn-copy-code btn btn-outline-grey btn-sm px-2 waves-effect">
+												<i class="fa fa-copy mr-1"></i> Copy code
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade "
+								id="mdb_d25dc05667c7e6539c8b00f2619aab32" role="tabpanel">
+								<div class="code-toolbar">
+									<pre
+										class="grey lighten-3 px-3 mb-0 line-numbers  language-javascript"
+										data-editor="false">
+																	<code class=" language-javascript">
+																		<span class="token function">$</span><span
+												class="token punctuation">(</span><span class="token string">'.file-upload'</span><span
+												class="token punctuation">)</span><span
+												class="token punctuation">.</span><span
+												class="token function">file_upload</span><span
+												class="token punctuation">(</span><span
+												class="token punctuation">)</span><span
+												class="token punctuation">;</span><span aria-hidden="true"
+												class="line-numbers-rows"><span></span></span>
+																	</code>
+																</pre>
+									<div class="toolbar">
+										<div class="toolbar-item">
+											<button
+												class="btn-copy-code btn btn-outline-grey btn-sm px-2 waves-effect">
+												<i class="fa fa-copy mr-1"></i> Copy code
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /.mdbsnippet -->
+					<!--/Code-->
+
+				</section>
+				<!--/Section: Intro-->
+
+			</section>
+
+			<hr class="mt-4 mb-5">
+
+			<section class="mx-1" id="max-size">
+
+				<!--Title-->
+				<h2 class="section-heading mb-4">Max size</h2>
+
+				<p>You can add a maximum file size</p>
+
+				<!--Live preview-->
+				<section>
+					<div class="file-upload-wrapper">
+						<div class="card card-body view file-upload">
+							<div class="card-text file-upload-message">
+								<i class="fas fa-cloud-upload-alt"></i>
+								<p>Drag and drop a file here or click</p>
+								<p class="file-upload-error">Ooops, something wrong
+									happended.</p>
+							</div>
+							<div class="mask rgba-stylish-slight"></div>
+							<div class="file-upload-errors-container">
+								<ul></ul>
+							</div>
+							<input type="file" id="input-file-max-fs" class="file_upload"
+								data-max-file-size="2M">
+							<button type="button"
+								class="btn btn-sm btn-danger waves-effect waves-light">
+								Remove<i class="far fa-trash-alt ml-1"></i>
+							</button>
+							<div class="file-upload-preview">
+								<span class="file-upload-render"></span>
+								<div class="file-upload-infos">
+									<div class="file-upload-infos-inner">
+										<p class="file-upload-filename">
+											<span class="file-upload-filename-inner"></span>
+										</p>
+										<p class="file-upload-infos-message">Drag and drop or
+											click to replace</p>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!--Code-->
+					<!-- mdbsnippet -->
+					<div class="docs-pills">
+						<div class="d-flex justify-content-between">
+							<ul class="nav md-pills pills-grey">
+								<li class="nav-item"><a class="nav-link active show"
+									data-toggle="tab" href="#mdb_8155d4278a582aa234c9ea7299defc9a"
+									role="tab">HTML</a></li>
+								<li class="nav-item"><a class="nav-link " data-toggle="tab"
+									href="#mdb_7bd493c5f8020172f4f73dfcc9d1d3ac" role="tab">JS</a></li>
+							</ul>
+						</div>
+						<div class="tab-content">
+							<div class="tab-pane fade active show"
+								id="mdb_8155d4278a582aa234c9ea7299defc9a" role="tabpanel">
+								<div class="code-toolbar">
+									<pre
+										class="grey lighten-3 px-3 mb-0 line-numbers  language-html"
+										data-editor="false">
+																	<code class=" language-html">
+																		<span class="token tag"><span class="token tag"><span
+													class="token punctuation">&lt;</span>div</span> <span
+												class="token attr-name">class</span><span
+												class="token attr-value"><span
+													class="token punctuation">=</span><span
+													class="token punctuation">"</span>file-upload-wrapper<span
+													class="token punctuation">"</span></span><span
+												class="token punctuation">&gt;</span></span>
+  <span class="token tag"><span class="token tag"><span
+													class="token punctuation">&lt;</span>input</span> <span
+												class="token attr-name">type</span><span
+												class="token attr-value"><span
+													class="token punctuation">=</span><span
+													class="token punctuation">"</span>file<span
+													class="token punctuation">"</span></span> <span
+												class="token attr-name">id</span><span
+												class="token attr-value"><span
+													class="token punctuation">=</span><span
+													class="token punctuation">"</span>input-file-max-fs<span
+													class="token punctuation">"</span></span> <span
+												class="token attr-name">class</span><span
+												class="token attr-value"><span
+													class="token punctuation">=</span><span
+													class="token punctuation">"</span>file-upload<span
+													class="token punctuation">"</span></span> <span
+												class="token attr-name">data-max-file-size</span><span
+												class="token attr-value"><span
+													class="token punctuation">=</span><span
+													class="token punctuation">"</span>2M<span
+													class="token punctuation">"</span></span> <span
+												class="token punctuation">/&gt;</span></span>
+<span class="token tag"><span class="token tag"><span
+													class="token punctuation">&lt;/</span>div</span><span
+												class="token punctuation">&gt;</span></span><span
+												aria-hidden="true" class="line-numbers-rows"><span></span><span></span><span></span></span>
+																	</code>
+																</pre>
+									<div class="toolbar">
+										<div class="toolbar-item">
+											<button
+												class="btn-copy-code btn btn-outline-grey btn-sm px-2 waves-effect">
+												<i class="fa fa-copy mr-1"></i> Copy code
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="tab-pane fade "
+								id="mdb_7bd493c5f8020172f4f73dfcc9d1d3ac" role="tabpanel">
+								<div class="code-toolbar">
+									<pre
+										class="grey lighten-3 px-3 mb-0 line-numbers  language-javascript"
+										data-editor="false">
+																	<code class=" language-javascript">
+																		<span class="token function">$</span><span
+												class="token punctuation">(</span><span class="token string">'.file-upload'</span><span
+												class="token punctuation">)</span><span
+												class="token punctuation">.</span><span
+												class="token function">file_upload</span><span
+												class="token punctuation">(</span><span
+												class="token punctuation">)</span><span
+												class="token punctuation">;</span><span aria-hidden="true"
+												class="line-numbers-rows"><span></span></span>
+																	</code>
+																</pre>
+									<div class="toolbar">
+										<div class="toolbar-item">
+											<button
+												class="btn-copy-code btn btn-outline-grey btn-sm px-2 waves-effect">
+												<i class="fa fa-copy mr-1"></i> Copy code
+											</button>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- /.mdbsnippet -->
+					<!--/Code-->
+
+				</section>
+				<!--/Section: Intro-->
+
+			</section>
+		</section>
+		<!--Section: Docs content-->
+	</section>
+	</div>
+	<!--Grid column: Content-->
+
+
+	<!--Grid column: Scrollspy-->
+	<div class="col-md-2">
+
+		<!-- Sticky content -->
+		<div class="sticky" style="position: static; top: 90px; z-index: 2;">
+
+			<!--AD CONTENT-->
+			<div class="alert alert-secondary">
+				<p>
+					<span class="badge badge-danger text-uppercase">NEW</span> We've
+					added <span class="font-weight-bold">MORE STUFF</span> to PRO &amp;
+					BUNDLE.
+				</p>
+				<a href="https://mdbootstrap.com/pricing/"
+					class="btn btn-outline-black btn-sm mt-0 waves-effect waves-light">NEW
+					PRICING</a>
+			</div>
+			<!--AD CONTENT-->
+
+			<!--Scrollspy-->
+			<div id="scrollspy">
+
+				<!-- Links -->
+				<ul class="nav nav-pills default-pills smooth-scroll"
+					data-allow-hashes="">
+					<li class="nav-item"><a class="nav-link" href="#introduction">Introduction</a></li>
+					<li class="nav-item"><a class="nav-link" href="#basic-example">Basic
+							example</a></li>
+					<li class="nav-item"><a class="nav-link" href="#default-value">Default
+							value</a></li>
+					<li class="nav-item"><a class="nav-link" href="#height">Custom
+							height</a></li>
+					<li class="nav-item"><a class="nav-link" href="#disabled">Disable</a></li>
+					<li class="nav-item"><a class="nav-link" href="#max-size">Max
+							size</a></li>
+				</ul>
+				<!-- Links -->
+
+			</div>
+			<!--Scrollspy-->
+
+		</div>
+		<!-- Sticky content -->
+
+	</div>
+	<!--Grid column: Scrollspy-->
+
+	</div>
+	<!--Grid row-->
+
+	</div>
+	<!--/.Overview-->
+	<!--API-->
+	<div class="tab-pane fade" id="docsTabsAPI" role="tabpanel">
+
+		<!--Grid row-->
+		<div class="row">
+
+			<!--Grid column: Content-->
+			<div class="col-lg-10 col-md-12">
+				<!--Edit & rate-->
+				<div class="d-flex justify-content-end">
+					<a role="button"
+						href="https://github.com/mdbootstrap/mdb-docs-and-content/edit/master/en/jquery/web/docs/plugins/fileupload/a.html"
+						class="btn btn-outline-dark btn-sm my-0 mr-4 d-none d-md-inline-block waves-effect waves-light"
+						target="_blank" rel="nofollow"> <i class="fas fa-edit mr-1"></i>Edit
+						these docs
+					</a>
+					<!--                        <span class="mt-1 mr-2">-->
+					<!--</span>-->
+					<!--                        <span class="popover-form-container rate-tooltip" data-page-id="-->
+					<!--">-->
+					<!--                          -->
+					<!--                            <i class='-->
+					<!-- stars py-2 px-1 popovers' data-page-template="docs" data-index="-->
+					<!--" style='cursor: pointer' data-html="true" data-toggle="popover" data-placement="top" data-content="" title=""></i>-->
+					<!--                          -->
+					<!--                        </span>-->
+				</div>
+				<!--/Edit & rate-->
+				<!--Section: Docs content-->
+				<section class="documentation">
+					<!--Section: Intro-->
+					<section id="a-introduction">
+
+						<!--Title-->
+						<h2 class="section-heading">Drag and drop file upload -
+							getting started : download &amp; setup</h2>
+
+					</section>
+					<!--/Section: Intro-->
+
+					<hr class="my-5">
+
+					<!--Section: -->
+					<section id="a-download">
+
+						<!--Title-->
+						<h2 class="section-heading mb-4">Download</h2>
+
+						<blockquote class="blockquote bq-primary">
+							<p class="bq-title">This plugin requires a purchase.</p>
+							<a class="btn btn-unique waves-effect waves-light"
+								href="https://mdbootstrap.com/products/jquery-file-upload/"
+								role="button">Buy Drag and drop file upload plugin</a>
+						</blockquote>
+
+					</section>
+					<!--/Section: -->
+
+					<hr class="my-5">
+
+					<!--Section: -->
+					<section id="a-tutorial">
+
+						<!--Title-->
+						<h2 class="section-heading mb-4">Tutorial</h2>
+
+						<!--Grid row-->
+						<div class="row">
+
+							<!--Grid column-->
+							<div class="col-md-6 mb-4">
+
+								<div class="embed-responsive embed-responsive-16by9">
+									<iframe class="embed-responsive-item"
+										src="https://www.youtube.com/embed/Q1hw1bIwKfI?enablejsapi=1&amp;origin=https%3A%2F%2Fmdbootstrap.com"
+										allowfullscreen="" data-gtm-yt-inspected-2340190_699="true"
+										id="23789879" data-gtm-yt-inspected-2340190_908="true"></iframe>
+								</div>
+
+							</div>
+							<!--Grid column-->
+
+						</div>
+						<!--Grid row-->
+
+					</section>
+					<!--/Section: -->
+				</section>
+				<!--Section: Docs content-->
+			</div>
+			<!--Grid column: Content-->
+
+			<!--Grid column: Scrollspy-->
+			<div class="col-md-2">
+
+				<!-- Sticky content -->
+				<div class="sticky2">
+
+					<!--Scrollspy-->
+					<div id="scrollspy">
+
+						<!-- Links -->
+						<ul class="nav nav-pills default-pills smooth-scroll"
+							data-allow-hashes="">
+							<li class="nav-item"><a class="nav-link"
+								href="#a-introduction">Introduction</a></li>
+							<li class="nav-item"><a class="nav-link" href="#a-download">Download</a></li>
+							<li class="nav-item"><a class="nav-link" href="#a-mdb-pro">Tutorial</a></li>
+						</ul>
+						<!-- Links -->
+
+					</div>
+					<!--Scrollspy-->
+
+				</div>
+				<!-- Sticky content -->
+
+			</div>
+			<!--Grid column: Scrollspy-->
+
+		</div>
+		<!--Grid row-->
+
+	</div>
+	<!--/.API-->
+	</div>
+	<!--/.Examples-->
+	</div>
+
+	</div>
+	<!-- Main docs tabs -->
+
+
+
+	</main>
+
+
+	<!--Footer-->
+	<footer id="footer" class="page-footer unique-color-dark mt-4"
+		style="padding-left: 0px;">
+		<div class="info-color-dark text-center py-4">
+			<!--Newsletter-->
+			<a id="footer-link-newsletter" href="/docs/newsletter/"
+				class="border rounded p-2 px-3 mr-4 d-none d-md-inline-block">Join
+				our newsletter <i class="fas fa-envelope white-text ml-2"> </i>
+			</a>
+			<!--Newsletter-->
+			<a id="footer-link-affiliate" href="/mdb-affiliate-program/"
+				class="border rounded p-2 px-3 mr-4 d-none d-md-inline-block">Become
+				an Affiliate <i class="fas fa-money-bill-alt white-text ml-2"> </i>
+			</a>
+			<!--Contact-->
+			<a id="footer-link-contact" href="/general/contact/"
+				class="border rounded p-2 px-3 mr-4 d-none d-md-inline-block">Contact
+				us <i class="fas fa-envelope white-text ml-2"> </i>
+			</a>
+			<!--GitHub-->
+			<a rel="nofollow" target="_blank" id="footer-link-github"
+				href="https://github.com/mdbootstrap/bootstrap-material-design">
+				<i class="fab fa-github white-text mr-4"> </i>
+			</a>
+			<!--Youtube-->
+			<a rel="nofollow" target="_blank" id="footer-link-youtube"
+				href="https://www.youtube.com/watch?v=cXTThxoywNQ"> <i
+				class="fab fa-youtube white-text mr-4"> </i>
+			</a>
+			<!--Facebook-->
+			<a rel="nofollow" target="_blank" id="footer-link-facebook"
+				href="https://www.facebook.com/mdbootstrap"> <i
+				class="fab fa-facebook-f white-text mr-4"> </i>
+			</a>
+			<!--Twitter-->
+			<a rel="nofollow" target="_blank" id="footer-link-twitter"
+				href="https://twitter.com/MDBootstrap"> <i
+				class="fab fa-twitter white-text"> </i>
+			</a>
+		</div>
+		<!--Footer Links-->
+		<div class="container text-center text-md-left mt-5">
+			<div class="row mt-3">
+				<!--First column-->
+				<div class="col-md-3 col-lg-4 col-xl-3 mb-4">
+					<h6 class="text-uppercase font-weight-bold">
+						<strong>Useful links</strong>
+					</h6>
+					<hr class="info-color mb-4 mt-0 d-inline-block mx-auto"
+						style="width: 60px;">
+					<p>
+						<a id="footer-link-faq" href="/docs/jquery/getting-started/faq/">Frequently
+							Asked Questions</a>
+					</p>
+					<p>
+						<a id="footer-link-browsers" href="/general/browsers-and-devices/">Browsers
+							and devices</a>
+					</p>
+					<p>
+						<a id="footer-link-license" href="/general/license/">License</a>
+					</p>
+					<p>
+						<a id="footer-link-changelog" href="/docs/jquery/changelog/">ChangeLog</a>
+					</p>
+					<p>
+						<a id="footer-link-policy" href="/general/privacy-policy/">Privacy
+							Policy</a>
+					</p>
+					<p>
+						<a id="footer-link-refund" href="/general/return-refund-policy/">Return/Refund
+							policy</a>
+					</p>
+					<p>
+						<a id="footer-link-tutWebpush"
+							href="https://mdbootstrap.com/resellers/">For Resellers</a>
+					</p>
+				</div>
+				<!--/.First column-->
+				<!--Second column-->
+				<div class="col-md-2 col-lg-2 col-xl-2 mx-auto mb-4">
+					<h6 class="text-uppercase font-weight-bold">
+						<strong>Resources</strong>
+					</h6>
+					<hr class="info-color mb-4 mt-0 d-inline-block mx-auto"
+						style="width: 60px;">
+					<p>
+						<a id="footer-link-jquery" href="/docs/jquery/">MDB jQuery</a>
+					</p>
+					<p>
+						<a id="footer-link-angular" href="/docs/angular/">MDB Angular</a>
+					</p>
+					<p>
+						<a id="footer-link-react" href="/docs/react/">MDB React</a>
+					</p>
+					<p>
+						<a id="footer-link-vue" href="/docs/vue/">MDB Vue</a>
+					</p>
+					<p>
+						<a id="footer-link-brandflow" href="/support/">Support forum</a>
+					</p>
+					<p>
+						<a id="footer-link-brandflow" href="/snippets/">MDB Editor
+							&amp; Snippets </a>
+					</p>
+					<p>
+						<a id="footer-link-brandflow" href="/articles/">Articles</a>
+					</p>
+					<p>
+						<a id="footer-link-brandflow" href="/user/mdbootstrap/">News</a>
+					</p>
+					<p>
+						<a id="footer-link-freebies" href="/freebies/">Free templates</a>
+					</p>
+					<p>
+						<a id="footer-link-templates" href="/templates/">Premium
+							templates</a>
+					</p>
+				</div>
+				<!--/.Second column-->
+				<!--Third column-->
+				<div class="col-md-3 col-lg-2 col-xl-2 mx-auto mb-4">
+					<h6 class="text-uppercase font-weight-bold">
+						<strong>Free tutorials</strong>
+					</h6>
+					<hr class="info-color mb-4 mt-0 d-inline-block mx-auto"
+						style="width: 60px;">
+					<p>
+						<a id="footer-link-tutBootstrap" href="/education/">Basics
+							(HTML/CSS/JS)</a>
+					</p>
+					<p>
+						<a id="footer-link-tutBootstrap" href="/education/bootstrap/">Bootstrap
+							&amp; web design</a>
+					</p>
+					<p>
+						<a id="footer-link-tutAngular" href="/education/angular/">Angular</a>
+					</p>
+					<p>
+						<a id="footer-link-tutAngular" href="/education/react/">React</a>
+					</p>
+					<p>
+						<a id="footer-link-tutAngular" href="/education/vue/">Vue</a>
+					</p>
+					<p>
+						<a id="footer-link-tutWordpress" href="/education/wordpress/">WordPress</a>
+					</p>
+					<p>
+						<a id="footer-link-tutWebpush" href="/articles/">Miscellaneous</a>
+					</p>
+				</div>
+				<!--/.Third column-->
+				<!--Fourth column-->
+				<div class="col-md-4 col-lg-3 col-xl-3">
+					<h6 class="text-uppercase font-weight-bold">
+						<strong>Company</strong>
+					</h6>
+					<hr class="info-color mb-4 mt-0 d-inline-block mx-auto"
+						style="width: 60px;">
+					<!-- <p>
+              <i class="fas fa-building mr-3"></i> Our story</p> -->
+					<p>
+						<a id="footer-link-team" href="/general/our-team/"> <i
+							class="fas fa-users mr-3"></i> Our team
+						</a>
+					</p>
+					<p>
+						<a id="footer-link-company" href="/general/contact/"> <i
+							class="fab fa-mdb mr-3"></i> Company data
+						</a>
+					</p>
+					<p>
+						<a id="footer-link-formedia" href="/general/press-pack/"> <i
+							class="fas fa-bullhorn mr-3"></i> For media
+						</a>
+					</p>
+				</div>
+				<!--/.Fourth column-->
+			</div>
+		</div>
+		<!--/.Footer Links-->
+		<!-- Copyright-->
+		<div class="footer-copyright py-3 text-center">
+			© 2020 Copyright: <a href="https://mdbootstrap.com"> <strong>
+					MDBootstrap.com</strong>
+			</a>
+		</div>
+		<!--/.Copyright -->
+	</footer>
+	<!--/.Footer-->
+
+	<style>
+main input[type=email]:focus, main input[type=password]:focus, main input[type=text]:focus,
+	main input[type=url]:focus, main textarea:focus {
+	border: 0;
+}
+
+.embed-responsive-16by9-fix-contact-form::before {
+	height: 450px;
+}
+
+@media ( min-width :580px) {
+	.modal-contact-form-fix, .modal-contact-form-fix * {
+		box-sizing: content-box !important;
+	}
+}
+
+@media ( min-width : 1400px) {
+	#modalPricing .modal-dialog {
+		max-width: 80vw;
+	}
+}
+</style>
+
+
+
+	<!-- Modal Contact Form -->
+	<div class="modal fade" id="contactForm" tabindex="-1" role="dialog"
+		aria-labelledby="myModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+				<div class="modal-header text-center">
+					<h4 class="modal-title w-100 font-weight-bold">Write to us</h4>
+					<button type="button" class="close" data-dismiss="modal"
+						aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+				</div>
+				<div class="modal-body mx-3">
+					<div class="text-center font-weight-bold mb-5">
+						<p>
+							For any technical questions please use <a
+								href="https://mdbootstrap.com/support/">Support</a>
+						</p>
+						<p>
+							You can find licensing details on our <a
+								href="https://mdbootstrap.com/general/license/">license page</a>
+						</p>
+					</div>
+
+
+					<form id="contact-form" name="contact-form"
+						action="https://mdbootstrap.com/wp-content/themes/mdbootstrap4/contact-form-setup.php"
+						method="POST" onsubmit="return validateForm()">
+						<div class="md-form mb-5">
+							<i class="fas fa-user prefix grey-text"></i> <input type="text"
+								id="name" name="name" class="form-control validate"> <label
+								data-error="wrong" data-success="right" for="name">Your
+								name</label>
+						</div>
+
+						<div class="md-form mb-5">
+							<i class="fas fa-envelope prefix grey-text"></i> <input
+								type="email" id="email" name="email"
+								class="form-control validate"> <label data-error="wrong"
+								data-success="right" for="email">Your email</label>
+						</div>
+
+						<div class="md-form mb-5">
+							<i class="fas fa-tag prefix grey-text"></i> <input type="text"
+								id="subject" name="subject" class="form-control validate">
+							<label data-error="wrong" data-success="right" for="subject">Subject</label>
+						</div>
+
+						<div class="md-form">
+							<i class="fas fa-pencil prefix grey-text"></i>
+							<textarea type="text" id="message" name="message"
+								class="md-textarea form-control" rows="4"></textarea>
+							<label data-error="wrong" data-success="right" for="message">Your
+								message</label>
+						</div>
+					</form>
+				</div>
+				<p class="text-center" id="status"></p>
+				<div class="modal-footer d-flex justify-content-center">
+
+					<button class="btn btn-info waves-effect waves-light"
+						onclick="validateForm()">
+						Send <i class="fas fa-paper-plane-o ml-1"></i>
+					</button>
+
+
+				</div>
+			</div>
+		</div>
+	</div>
+	<!--/Modal Contact Form -->
+
+
+	<!-- Modal: modalSnippetSettings -->
+	<div class="modal fade" id="modalSnippetSettings" tabindex="-1"
+		role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog modal-lg" role="document">
+
+			<!-- Modal content -->
+			<div class="modal-content">
+
+				<div id="snippets-settings-preloader"
+					class="checkout-preloader-container d-none">
+					<div class="preloader-wrapper big active">
+						<div class="spinner-layer spinner-blue-only">
+							<div class="circle-clipper left">
+								<div class="circle"></div>
+							</div>
+							<div class="gap-patch">
+								<div class="circle"></div>
+							</div>
+							<div class="circle-clipper right">
+								<div class="circle"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<!-- Modal header -->
+				<div class="modal-header">
+					<h5 class="modal-title" id="settings-modal">Snippet settings</h5>
+					<button type="button" class="close" data-dismiss="modal"
+						aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+				</div>
+				<!-- Modal body -->
+				<div class="modal-body">
+
+					<!--Grid row-->
+					<div class="row">
+
+						<!--Grid column-->
+						<div class="col-md-6 mb-4">
+
+							<!--Name-->
+							<select class="browser-default custom-select"
+								id="snippet-package-technology">
+								<option value="" disabled="">MDB Technology</option>
+							</select>
+
+							<!--Name-->
+							<select class="browser-default custom-select mt-2"
+								id="snippet-package-version">
+								<option value="" disabled="">MDB Version</option>
+							</select>
+
+							<!--Grid row-->
+							<div class="row mt-2">
+
+								<!--Grid column-->
+								<div class="col-md-7 mb-4">
+
+									<!--Name-->
+									<select class="browser-default custom-select md-selected"
+										id="snippet-package-type">
+										<option value="" disabled="">Type</option>
+									</select>
+
+								</div>
+								<!--Grid column-->
+
+								<!--Grid column-->
+								<div class="col-md-5 mb-4">
+
+									<a role="button"
+										class="btn btn-info btn-md waves-effect waves-light"
+										target="_blank" id="go-pro">Go Pro</a>
+
+								</div>
+								<!--Grid column-->
+
+							</div>
+							<!--Grid row-->
+
+							<div class="switch mb-2">
+								<label> Public <input id="snippet-status"
+									type="checkbox"> <span class="lever"></span> Private
+								</label>
+							</div>
+
+						</div>
+						<!--Grid column-->
+
+						<!--Grid column-->
+						<div class="col-md-6 mb-4">
+
+							<!-- Snippet title -->
+							<input type="text" class="form-control mb-3" id="snippet-title"
+								placeholder="Snippet title">
+
+							<!-- Snippet description -->
+							<div class="form-group">
+								<textarea class="form-control" id="snippet-description" rows="5"
+									placeholder="Snippet description"></textarea>
+							</div>
+
+							<!-- Snippet tags -->
+							<div class="chips chips-initial chips-autocomplete mb-0"
+								id="snippet-tag-input"></div>
+							<span id="tags-invalid-feedback" class="small red-text d-none">You
+								can add max. 10 tags with min. length of 2 each</span>
+
+						</div>
+						<!--Grid column-->
+
+					</div>
+					<!--Grid row-->
+
+				</div>
+				<!-- Modal footer -->
+				<div class="modal-footer">
+					<button type="button"
+						class="btn btn-outline-elegant waves-effect waves-light"
+						data-dismiss="modal">Close</button>
+					<a role="button" class="btn btn-info waves-effect waves-light"
+						id="save-snippet-settings" data-action="" data-user-nicename="new">Create</a>
+				</div>
+			</div>
+			<!-- Modal content -->
+		</div>
+	</div>
+	<!-- Modal: modalSnippetSettings -->
+
+	<!-- Modal: modalOpenSnippet -->
+	<div class="modal fade" id="modalOpenSnippet" tabindex="-1"
+		role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+		<div class="modal-dialog" role="document">
+			<div class="modal-content">
+
+				<div id="open-modal-preloader"
+					class="checkout-preloader-container d-none">
+					<div class="preloader-wrapper big active">
+						<div class="spinner-layer spinner-blue-only">
+							<div class="circle-clipper left">
+								<div class="circle"></div>
+							</div>
+							<div class="gap-patch">
+								<div class="circle"></div>
+							</div>
+							<div class="circle-clipper right">
+								<div class="circle"></div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="modal-header">
+					<h5 class="modal-title" id="exampleModalLabel">Open snippet</h5>
+					<button type="button" class="close" data-dismiss="modal"
+						aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+				</div>
+				<div class="modal-body">
+					<p class="text-center">Your snippet is ready. Click to open</p>
+				</div>
+				<div class="modal-footer m-auto">
+					<a type="button"
+						class="btn btn-primary open-snippet waves-effect waves-light"
+						target="_blank">Open</a>
+				</div>
+			</div>
+		</div>
+	</div>
+	<!-- Modal: modalOpenSnippet -->
+
+	<!-- Modal: modalPricing -->
+	<div class="modal fade" id="modalPricing" tabindex="-1" role="dialog"
+		aria-labelledby="exampleModalLabel" aria-hidden="true"
+		data-backdrop="static">
+		<div class="modal-dialog modal-fluid" role="document">
+			<div class="modal-content">
+				<div class="modal-header border border-bottom border-white"
+					style="height: 0px;">
+					<button type="button" class="close py-1 px-2" data-dismiss="modal"
+						aria-label="Close">
+						<span aria-hidden="true">×</span>
+					</button>
+				</div>
+				<div class="modal-body pt-0">
+					<div
+						class="progress md-progress primary-color-dark pricing-modal-preloader"
+						style="display: none;">
+						<div class="indeterminate"></div>
+					</div>
+					<!-- Section: PRICING Content -->
+					<section id="modalPricingContent"></section>
+					<!-- Section: PRICING Content -->
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="dom-target-fb" style="display: none;"></div>
+	<div id="dom-target-tw" style="display: none;"></div>
+	<div id="dom-target-gp" style="display: none;"></div>
+
+	<!-- Compiled JS -->
+	<link rel="stylesheet" id="woocommerce-currency-switcher-css"
+		href="https://z9t4u9f6.stackpathcdn.com/wp-content/plugins/woocommerce-currency-switcher/css/front.css?ver=2.3.1"
+		type="text/css" media="all">
+	<script type="text/javascript">
+/* <![CDATA[ */
+var wpcf7 = {"apiSettings":{"root":"https:\/\/mdbootstrap.com\/wp-json\/contact-form-7\/v1","namespace":"contact-form-7\/v1"},"cached":"1"};
+/* ]]> */
+</script>
+	<script type="text/javascript">
+/* <![CDATA[ */
+var woocommerce_params = {"ajax_url":"\/wp-admin\/admin-ajax.php","wc_ajax_url":"\/?wc-ajax=%%endpoint%%"};
+/* ]]> */
+</script>
+	<script type="text/javascript">
+/* <![CDATA[ */
+var ajax_auth_object = {"ajaxurl":"https:\/\/mdbootstrap.com\/wp-admin\/admin-ajax.php","redirecturl":"https:\/\/mdbootstrap.com","loadingmessage":"Sending user info, please wait..."};
+/* ]]> */
+</script>
+	<script type="text/javascript">
+/* <![CDATA[ */
+var snippets_object = {"wp_ajaxurl":"https:\/\/mdbootstrap.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+	<script type="text/javascript">
+/* <![CDATA[ */
+var example_ajax_obj = {"ajaxurl":"https:\/\/mdbootstrap.com\/wp-admin\/admin-ajax.php"};
+/* ]]> */
+</script>
+	<script type="text/javascript">
+/* <![CDATA[ */
+var dynamic_parts_loader = {"wp_ajaxurl":"https:\/\/mdbootstrap.com\/wp-admin\/admin-ajax.php","page_id":"80402","current_site_lang":"en","dpl_page_categories":["jquery"]};
+/* ]]> */
+</script>
+	<script type="text/javascript"
+		src="https://mdbootstrap.com/wp-admin/load-scripts.php?c=gzip&amp;load%5Bchunk_0%5D=hoverintent-js,admin-bar,wp-embed,jquery-ui-core,jquery-ui-widget,jquery-ui-mouse,jquery-ui-slider&amp;ver=5.4.2"></script>
+	<script type="text/javascript"
+		src="https://z9t4u9f6.stackpathcdn.com/wp-content/themes/mdbootstrap4/js/bundles/4.19.0/compiled.0.min.js?ver=4.19.0"></script>
+	<script type="text/javascript"
+		src="https://z9t4u9f6.stackpathcdn.com/wp-content/themes/mdbootstrap4/js/footer-functions.js?ver=4.19.0-update.8"></script>
+	<script type="text/javascript"
+		src="https://z9t4u9f6.stackpathcdn.com/wp-content/plugins/contact-form-7/includes/js/scripts.js?ver=5.1.9"></script>
+	<script type="text/javascript"
+		src="https://z9t4u9f6.stackpathcdn.com/wp-content/plugins/woocommerce/assets/js/jquery-blockui/jquery.blockUI.min.js?ver=2.70"></script>
+	<script type="text/javascript"
+		src="https://z9t4u9f6.stackpathcdn.com/wp-content/plugins/woocommerce/assets/js/js-cookie/js.cookie.min.js?ver=2.1.4"></script>
+	<script type="text/javascript"
+		src="https://z9t4u9f6.stackpathcdn.com/wp-content/plugins/woocommerce/assets/js/frontend/woocommerce.min.js?ver=4.2.0"></script>
+	<script type="text/javascript"
+		src="https://z9t4u9f6.stackpathcdn.com/wp-content/themes/mdbootstrap4/js/mdb3/jquery.validate.js?ver=1.0.0"></script>
+	<script type="text/javascript"
+		src="https://z9t4u9f6.stackpathcdn.com/wp-content/themes/mdbootstrap4/js/ajax-auth-script.js?ver=4.19.0-update.4"></script>
+	<script type="text/javascript"
+		src="https://z9t4u9f6.stackpathcdn.com/wp-content/themes/mdbootstrap4/js/snippets-behavior.js?ver=4.19.0-update.6"></script>
+	<script type="text/javascript"
+		src="https://z9t4u9f6.stackpathcdn.com/wp-content/themes/mdbootstrap4/js/edit-pencil-behavior.js?ver=4.8.2"></script>
+	<script type="text/javascript"
+		src="https://z9t4u9f6.stackpathcdn.com/wp-content/themes/mdbootstrap4/js/pricing-modal.js?ver=4.19.0-update.2"></script>
+	<script type="text/javascript"
+		src="https://z9t4u9f6.stackpathcdn.com/wp-content/themes/mdbootstrap4/js/client_notification.js?ver=4.7.3-update.4"></script>
+	<script type="text/javascript"
+		src="https://z9t4u9f6.stackpathcdn.com/wp-content/themes/mdbootstrap4/js/pages-rates.js?ver=4.19.0-update.1"></script>
+	<script type="text/javascript"
+		src="https://z9t4u9f6.stackpathcdn.com/wp-content/themes/mdbootstrap4/js/dynamic-parts-loader.js?ver=4.19.0-update.10"></script>
+	<script type="text/javascript"
+		src="https://z9t4u9f6.stackpathcdn.com/wp-content/plugins/woocommerce/assets/js/jquery-ui-touch-punch/jquery-ui-touch-punch.min.js?ver=4.2.0"></script>
+	<script type="text/javascript">
+        var woocs_is_mobile = 0;
+        var woocs_special_ajax_mode = 0;
+        var woocs_drop_down_view = "ddslick";
+        var woocs_current_currency = {"name":"EUR","rate":1,"symbol":"&euro;","position":"left_space","is_etalon":0,"hide_cents":1,"hide_on_front":0,"rate_plus":0,"decimals":0,"description":"European Euro","flag":"https:\/\/mdbootstrap.com\/wp-content\/plugins\/woocommerce-currency-switcher\/img\/no_flag.png"};
+        var woocs_default_currency = {"name":"USD","rate":1,"symbol":"&#36;","position":"left","is_etalon":1,"hide_cents":1,"hide_on_front":0,"rate_plus":0,"decimals":0,"description":"USA dollar","flag":"https:\/\/mdbootstrap.com\/wp-content\/plugins\/woocommerce-currency-switcher\/img\/no_flag.png"};
+        var woocs_array_of_get = '{}';
+        
+        woocs_array_no_cents = '["JPY","TWD"]';
+
+        var woocs_ajaxurl = "https://mdbootstrap.com/wp-admin/admin-ajax.php";
+        var woocs_lang_loading = "loading";
+        var woocs_shop_is_cached =1;
+        
+</script>
+	<script type="text/javascript"
+		src="https://z9t4u9f6.stackpathcdn.com/wp-content/plugins/woocommerce-currency-switcher/js/price-slider_33.js?ver=2.3.1"></script>
+	<script type="text/javascript"
+		src="https://z9t4u9f6.stackpathcdn.com/wp-content/plugins/woocommerce-currency-switcher/js/jquery.ddslick.min.js?ver=2.3.1"></script>
+	<script type="text/javascript"
+		src="https://z9t4u9f6.stackpathcdn.com/wp-content/plugins/woocommerce-currency-switcher/js/front.js?ver=2.3.1"></script>
+
+
+	<script>
+
+  
+</script>
+
+	<script>
+  $(document).ready(function() {
+    $(".button-collapse").sideNav();
+    var el = document.querySelector('.custom-scrollbar');
+    var ps = new PerfectScrollbar(el);
+  });
+</script>
+
+	<script type="text/javascript">
+$(document).ready(function() {
+
+  var type = window.location.hash.substr(1);
+  if (type==="docsTabsAPI") {
+    if($("#docsTabsAPI").length) {
+      $('[href="#docsTabsAPI"]').tab('show');
+    }
+    $('html, body').animate({scrollTop:0}, 'slow');
+  } else if (type==="docsTabsOverview") {
+
+    $('html, body').animate({scrollTop:0}, 'slow');
+  }
+
+  var hash = window.location.hash;
+  hash && $('ul.nav a[href="' + hash + '"]').tab('show');
+
+  $('.nav-mtd a').not('#docs-tab-examples').click(function (e) {
+
+    var scrollurl = $('body').scrollTop() || $('html').scrollTop();
+
+    window.location.hash = this.hash;
+    $('html, body').scrollTop(scrollurl);
+  });
+
+})
+</script>
+	<script
+		src="https://z9t4u9f6.stackpathcdn.com/wp-content/themes/mdbootstrap4/js/plugins/mdb-file-upload.min.js"></script>
+	<script>$('.file_upload').file_upload();</script>
+
+
+	<!-- Structured data: Breadcrumbs -->
+	<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "BreadcrumbList",
+    "itemListElement": [{
+      "@type": "ListItem",
+      "position": 1,
+      "item": {
+        "@id": "https://mdbootstrap.com/",
+        "name": "MDBootstrap",
+        "image": "https://mdbootstrap.com/img/Marketing/mdb-press-pack/mdb-main.jpg"
+      }
+    }, {
+      "@type": "ListItem",
+      "position": 2,
+      "item": {
+        "@id": "https://mdbootstrap.com/plugins/",
+        "name": "MD Bootstrap Plugins",
+        "image": "https://z9t4u9f6.stackpathcdn.com/wp-content/uploads/2018/11/mdb-jquery-free.jpg"
+      }
+    }, {
+      "@type": "ListItem",
+      "position": 3,
+      "item": {
+        "@id": "https://mdbootstrap.com/plugins/jquery/",
+        "name": "MD Bootstrap Plugins jQuery",
+        "image": "https://mdbootstrap.com/img/Marketing/docs/social/main-addons.jpg"
+      }
+    }, {
+      "@type": "ListItem",
+      "position": 4,
+      "item": {
+        "@id": "https://mdbootstrap.com/plugins/jquery/file-upload/",
+        "name": "MD Bootstrap File upload plugin",
+        "image": "https://z9t4u9f6.stackpathcdn.com/wp-content/uploads/2018/10/plugin-fileupload-jquery-1.jpg"
+      }
+    }]
+  }
+
+</script>
+
+
+	<!-- Structured data: Article -->
+	<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "NewsArticle",
+    "mainEntityOfPage": {
+      "@type": "WebPage",
+      "@id": "https://mdbootstrap.com/plugins/jquery/file-upload/"
+    },
+    "headline": "Bootstrap drag and drop file upload - examples & tutorial. Basic & advanced usage",
+    "image": [
+      "https://z9t4u9f6.stackpathcdn.com/wp-content/uploads/2018/10/plugin-fileupload-jquery-1.jpg"
+    ],
+    "datePublished": "2018-06-25T08:00:00+08:00",
+    "dateModified": "2018-06-25T09:20:00+08:00",
+    "author": {
+      "@type": "Organization",
+      "name": "MDBootstrap"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "MDBootstrap",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://z9t4u9f6.stackpathcdn.com/wp-content/uploads/2018/06/logo-mdb-jquery-small.png"
+      }
+    },
+    "description": "MD Bootstrap File Upload plugin is an extension that allows you to upload files by using drag and drop functionality. Easy to use, setup and customize."
+  }
+
+</script>
+	<script>
+      $(function () {
+        $(".sticky").sticky({
+          topSpacing: 90
+          , zIndex: 2
+          , stopper: "#footer"
+        });
+        $('a[href="#docsTabsAPI"]').on('shown.bs.tab', function (e) {
+
+          $(".sticky2").sticky({
+            topSpacing: 90
+            , zIndex: 2
+            , stopper: "#footer"
+          });
+
+        });
+        $('a[href="#docsTabsExamples"]').on('shown.bs.tab', function (e) {
+
+          $(".sticky3").sticky({
+            topSpacing: 90
+            , zIndex: 2
+            , stopper: "#footer"
+          });
+
+        });
+      });
+    </script>
+
+
+
+
+
+	<!--
+Performance optimized by W3 Total Cache. Learn more: https://www.boldgrid.com/w3-total-cache/
+
+Page Caching using disk: enhanced 
+Content Delivery Network via z9t4u9f6.stackpathcdn.com
+Database Caching 44/64 queries in 0.478 seconds using disk
+
+Served from: mdbootstrap.com @ 2020-06-16 10:06:42 by W3 Total Cache
+-->
+	<div class="hiddendiv common"></div>
+	<div class="drag-target" style="left: 0px;"></div>
+	<script type="text/javascript" id="">!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","289867067833087");fbq("track","PageView");</script>
+	<noscript>
+		<img height="1" width="1" style="display: none"
+			src="https://www.facebook.com/tr?id=289867067833087&amp;ev=PageView&amp;noscript=1">
+	</noscript>
+	<div style="display: none; visibility: hidden;">
+		<script>var stb_exitintent=!1;document.addEventListener("mousemove",function(a){var b=window.pageYOffset||document.documentElement.scrollTop;10>a.pageY-b&&0==stb_exitintent&&(dataLayer.push({event:"exit_intent"}),stb_exitintent=!0)});</script>
+	</div>
+	<script type="text/javascript" id="">function createCookie(c,d,b){var a="";b&&(a=new Date,a.setTime(a.getTime()+864E5*b),a="; expires\x3d"+a.toUTCString());document.cookie=c+"\x3d"+d+a+"; path\x3d/"}createCookie("firstCampaign","undefined",365);</script>
+	<script type="text/javascript" id="">function setCookie(a,b){var c="Mon, 18 Jan 2038 03:14:07";document.cookie=a+"\x3d"+b+";path\x3d/;expires\x3d"+c}function getCookie(a){for(var b=document.cookie.split(";"),c,d=0;d<b.length;d++){var e=b[d].trim();0===e.indexOf(a+"\x3d")&&(c=e.substring((a+"\x3d").length,e.length))}return c}(function(){var a=getCookie("pageviewCount");"undefined"===typeof a?a=1:a++;setCookie("pageviewCount",a)})();</script>
+</body>
+</html>

@@ -1,0 +1,96 @@
+console.log("asasas");
+			var name = $('#productName').val();
+			var description = $('#productDescription').val();
+			var portion = $('#productPortion').val();
+			var price = $('#productPrice').val();
+			var tax = $('#productTax').val();
+			var CatergoryID = $('#CatergoryID').val();
+			var selectedOption = $("#productStatusSelect option:selected")
+					.val();
+			//var productImage = $('#productImage').prop('file');
+
+			//var productImage2 = $('#productImage')[0].files[0]
+				var fd = new FormData();
+				//fd.append('fileImage', productImage2);
+				fd.append('name', name);
+				fd.append('description', description);
+				fd.append('portion', portion);
+				fd.append('price', price);
+				fd.append('tax', tax);
+				fd.append('selectedOption', selectedOption);
+				fd.append('itemID', productIDOnload);
+				fd.append('catID', CatergoryID);
+
+			var fileDatae = document.querySelector('#productImage');
+			//var fd = new FormData();
+			fd.append('fileImage', fileDatae.files[0])
+			
+			$.ajax({
+
+				url : "UpdatePanelFood",
+				data : fd,
+				enctype:"multipart/form-data",
+				cache : false,
+				contentType : false,
+				processData : false,
+				success : function(data, textStatus, jqXHR) {
+
+					if (data === "success")
+						$("#body").load(location.href + "#body");
+
+					else
+						alert('wwwwwwwwwwww');
+
+				}
+
+			})
+
+			
+			
+			
+			
+				
+			$.ajax({
+
+				url : "UpdatePanelFood",
+				data : {
+					'name' : name,
+					'description' : description,
+					'portion' : portion,
+					'price' : price,
+					'tax' : tax,
+					'selectedOption' : selectedOption,
+					'itemID' : productIDOnload,
+					'catID' : CatergoryID,
+					fileImage : productImage,
+
+				},
+				cache : false,
+				contentType : false,
+				processData : false,
+				success : function(data, textStatus, jqXHR) {
+
+					if (data === "success")
+						$("#body").load(location.href + "#body");
+
+					else
+						alert('wwwwwwwwwwww');
+
+				}
+
+			})
+			
+			
+			
+			
+			
+				//var productImage = $('#productImage').prop('file');
+
+			//var productImage2 = $('#productImage')[0].files[0]
+			
+			
+			
+			
+			
+			
+			
